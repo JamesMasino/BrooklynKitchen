@@ -23,46 +23,40 @@ export function Sink(props) {
       position={[-0.02, 0.004, 0.03]}
       rotation={[0, 0, 0]}
       dispose={null}>
-      <group scale={0.01}>
+      <group visible={sinkProps["Sink"]} scale={0.01}>
         <mesh
           castShadow
           receiveShadow
-          visible={sinkProps["Sink"]}
           geometry={nodes.l_faucetHandle_1["geometry"]}
           material={materials.chrome_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          visible={sinkProps["Sink"]}
           geometry={nodes.r_faucetHandle_1["geometry"]}
           material={materials.chrome_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          visible={sinkProps["Sink"]}
           geometry={nodes.spout_1["geometry"]}
           material={materials.chrome_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          visible={sinkProps["Sink"]}
           geometry={nodes.faucetBase_1["geometry"]}
           material={materials.chrome_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          visible={sinkProps["Sink"]}
           geometry={nodes.sink_1["geometry"]}
           material={materials.steel_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          visible={sinkProps["Sink"]}
           geometry={nodes.drain_1["geometry"]}
           material={materials.chrome_mtl_1001}
         />

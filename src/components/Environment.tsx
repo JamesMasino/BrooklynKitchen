@@ -34,7 +34,7 @@ export function Environment({ children }) {
       }
     }),
     {
-      collapsed: config.Collapsed
+      collapsed: true
     }
   );
   return (

@@ -2,8 +2,6 @@ import { useGLTF } from "@react-three/drei";
 import { useConfig } from "@store";
 import extend from "just-extend";
 import { useControls } from "leva";
-//import { VesselInterior } from "./VesselInterior";
-//<VesselInterior nodes={nodes.glass_1.geometry} />
 
 const config = {
   "model": "coffeePot.glb",

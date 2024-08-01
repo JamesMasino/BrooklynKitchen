@@ -5,8 +5,8 @@ import { useControls } from "leva";
 
 const config = {
   "model": "sink.glb",
-  "4k": "/sink/4k",
-  "quality": "4k"
+  "512": "/sink/512",
+  "quality": "512"
 };
 
 export function Sink(props) {
@@ -20,7 +20,7 @@ export function Sink(props) {
   return (
     <group
       {...{ ...props, ...sinkProps }}
-      position={[-0.5, 0.004, -0.32]}
+      position={[-0.02, 0.004, 0.03]}
       rotation={[0, 0, 0]}
       dispose={null}>
       <group scale={0.01}>

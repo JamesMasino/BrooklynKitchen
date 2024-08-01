@@ -5,8 +5,8 @@ import { useControls } from "leva";
 
 const config = {
   "model": "lowerCabinetSink.glb",
-  "2k": "/lowerCabinetSink/2k",
-  "quality": "2k"
+  "512": "/lowerCabinetSink/512",
+  "quality": "512"
 };
 
 export function LowerCabinetSink(props) {
@@ -22,7 +22,7 @@ export function LowerCabinetSink(props) {
   return (
     <group
       {...{ ...props, ...lowerCabinetSinkProps }}
-      position={[0, 0, 0]}
+      position={[0.48, 0, 0.35]}
       rotation={[0, 0, 0]}
       dispose={null}>
       <group scale={0.01}>

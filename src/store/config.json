@@ -3,7 +3,7 @@
   "//README 2": "* Do not modify any properties keys",
   "//README 3": "* Have fun",
   "//README Customizing Leva": "https://github.com/pmndrs/leva/blob/main/docs/inputs.md",
-  "Authors": ["Levi Broadnax 🐰", "Winston Palace 😺", "James Masino 🐆"],
+  "Authors": ["A MAUVE Spec Project | Powered by NitroColdBrew"],
   "CoffeeMug": {
     "Mug": {
       "label": "Show Mug",
@@ -85,6 +85,12 @@
       "shadows": {
         "value": "true"
       }
+    }
+  },
+  "KitchenRoom": {
+    "Room": {
+      "label": "Show Room",
+      "value": true
     }
   },
   "LowerCabinetSink": {

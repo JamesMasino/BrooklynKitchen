@@ -1,3 +1,13 @@
+BrooklynKitchen adds proprietary 3D models and textures to the project. This
+covers models, textures, and all associated files added to the public directory
+and elsewhere in support of the contributed files' implementation.
+
+Copyright MAUVE © 2024, All Rights Reserved
+
+```
+
+NitroColdBrew.coffee uses the unlicense.
+
 This is free and unencumbered software released into the public domain.
 
 Anyone is free to copy, modify, publish, use, compile, sell, or
@@ -22,3 +32,4 @@ ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.
 
 For more information, please refer to <https://unlicense.org>
+```

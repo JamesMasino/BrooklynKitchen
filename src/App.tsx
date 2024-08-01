@@ -1,7 +1,8 @@
 import {
-  CoffeeMug,
-  CoffeePot,
+  /*CoffeeMug, */
+  /*CoffeePot, */
   Environment,
+  KitchenRoom,
   LowerCabinetSink,
   Sink
 } from "@components";
@@ -14,8 +15,9 @@ export default function App() {
   return (
     <Canvas>
       <Environment>
-        <CoffeePot />
-        <CoffeeMug />
+        <KitchenRoom />
+        {/*<CoffeePot /> */}
+        {/*<CoffeeMug /> */}
         <LowerCabinetSink />
         <Sink />
       </Environment>

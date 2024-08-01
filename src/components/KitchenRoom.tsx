@@ -14,780 +14,776 @@ export function KitchenRoom(props) {
   const { nodes, materials } = useGLTF(
     `${config[config.quality]}/${config.model}`
   );
-  const coffeeProps = useControls(
-    "Kitchen Room",
-    extend(true, kitchenRoom, {}),
-    {
-      collapsed: true
-    }
-  );
+  const roomProps = useControls("Kitchen Room", extend(true, kitchenRoom, {}), {
+    collapsed: true
+  });
   return (
     <group {...props} position={[0, 0, 0]} rotation={[0, 0, 0]} dispose={null}>
-      <group scale={0.01}>
+      <group visible={roomProps["Room"]} scale={0.01}>
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.wallCorner_1.geometry}
+          geometry={nodes.wallCorner_1["geometry"]}
           material={materials.windowTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.windowTileBack_1.geometry}
+          geometry={nodes.windowTileBack_1["geometry"]}
           material={materials.windowTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.squareTile32_1.geometry}
-          material={materials.windowTile_mtl_1001}
-          position={[0, 124.6, 0]}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.squareTile31_1.geometry}
+          geometry={nodes.squareTile32_1["geometry"]}
           material={materials.windowTile_mtl_1001}
           position={[0, 124.6, 0]}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.squareTile30_1.geometry}
+          geometry={nodes.squareTile31_1["geometry"]}
           material={materials.windowTile_mtl_1001}
           position={[0, 124.6, 0]}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.squareTile29_1.geometry}
+          geometry={nodes.squareTile30_1["geometry"]}
           material={materials.windowTile_mtl_1001}
           position={[0, 124.6, 0]}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.squareTile28_1.geometry}
+          geometry={nodes.squareTile29_1["geometry"]}
+          material={materials.windowTile_mtl_1001}
+          position={[0, 124.6, 0]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.squareTile28_1["geometry"]}
           material={materials.windowTile_mtl_1001}
           position={[0, 106.8, 0]}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.squareTile27_1.geometry}
+          geometry={nodes.squareTile27_1["geometry"]}
           material={materials.windowTile_mtl_1001}
           position={[0, 106.8, 0]}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.squareTile26_1.geometry}
+          geometry={nodes.squareTile26_1["geometry"]}
           material={materials.windowTile_mtl_1001}
           position={[0, 106.8, 0]}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.squareTile25_1.geometry}
+          geometry={nodes.squareTile25_1["geometry"]}
           material={materials.windowTile_mtl_1001}
           position={[0, 106.8, 0]}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.squareTile24_1.geometry}
+          geometry={nodes.squareTile24_1["geometry"]}
           material={materials.windowTile_mtl_1001}
           position={[0, 89, 0]}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.squareTile23_1.geometry}
+          geometry={nodes.squareTile23_1["geometry"]}
           material={materials.windowTile_mtl_1001}
           position={[0, 89, 0]}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.squareTile22_1.geometry}
+          geometry={nodes.squareTile22_1["geometry"]}
           material={materials.windowTile_mtl_1001}
           position={[0, 89, 0]}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.squareTile21_1.geometry}
+          geometry={nodes.squareTile21_1["geometry"]}
           material={materials.windowTile_mtl_1001}
           position={[0, 89, 0]}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.squareTile20_1.geometry}
+          geometry={nodes.squareTile20_1["geometry"]}
           material={materials.windowTile_mtl_1001}
           position={[0, 71.2, 0]}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.squareTile19_1.geometry}
+          geometry={nodes.squareTile19_1["geometry"]}
           material={materials.windowTile_mtl_1001}
           position={[0, 71.2, 0]}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.squareTile18_1.geometry}
+          geometry={nodes.squareTile18_1["geometry"]}
           material={materials.windowTile_mtl_1001}
           position={[0, 71.2, 0]}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.squareTile17_1.geometry}
+          geometry={nodes.squareTile17_1["geometry"]}
           material={materials.windowTile_mtl_1001}
           position={[0, 71.2, 0]}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.squareTile16_1.geometry}
+          geometry={nodes.squareTile16_1["geometry"]}
           material={materials.windowTile_mtl_1001}
           position={[0, 53.4, 0]}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.squareTile15_1.geometry}
+          geometry={nodes.squareTile15_1["geometry"]}
           material={materials.windowTile_mtl_1001}
           position={[0, 53.4, 0]}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.squareTile14_1.geometry}
+          geometry={nodes.squareTile14_1["geometry"]}
           material={materials.windowTile_mtl_1001}
           position={[0, 53.4, 0]}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.squareTile13_1.geometry}
+          geometry={nodes.squareTile13_1["geometry"]}
           material={materials.windowTile_mtl_1001}
           position={[0, 53.4, 0]}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.squareTile12_1.geometry}
+          geometry={nodes.squareTile12_1["geometry"]}
           material={materials.windowTile_mtl_1001}
           position={[0, 35.6, 0]}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.squareTile11_1.geometry}
+          geometry={nodes.squareTile11_1["geometry"]}
           material={materials.windowTile_mtl_1001}
           position={[0, 35.6, 0]}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.squareTile10_1.geometry}
+          geometry={nodes.squareTile10_1["geometry"]}
           material={materials.windowTile_mtl_1001}
           position={[0, 35.6, 0]}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.squareTile09_1.geometry}
+          geometry={nodes.squareTile09_1["geometry"]}
           material={materials.windowTile_mtl_1001}
           position={[0, 35.6, 0]}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.squareTile08_1.geometry}
+          geometry={nodes.squareTile08_1["geometry"]}
           material={materials.windowTile_mtl_1001}
           position={[0, 17.8, 0]}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.squareTile07_1.geometry}
+          geometry={nodes.squareTile07_1["geometry"]}
           material={materials.windowTile_mtl_1001}
           position={[0, 17.8, 0]}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.squareTile06_1.geometry}
+          geometry={nodes.squareTile06_1["geometry"]}
           material={materials.windowTile_mtl_1001}
           position={[0, 17.8, 0]}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.squareTile05_1.geometry}
+          geometry={nodes.squareTile05_1["geometry"]}
           material={materials.windowTile_mtl_1001}
           position={[0, 17.8, 0]}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.squareTile04_1.geometry}
+          geometry={nodes.squareTile04_1["geometry"]}
           material={materials.windowTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.squareTile03_1.geometry}
+          geometry={nodes.squareTile03_1["geometry"]}
           material={materials.windowTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.squareTile02_1.geometry}
+          geometry={nodes.squareTile02_1["geometry"]}
           material={materials.windowTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.squareTile01_1.geometry}
+          geometry={nodes.squareTile01_1["geometry"]}
           material={materials.windowTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.wallTileBack_1.geometry}
+          geometry={nodes.wallTileBack_1["geometry"]}
           material={materials.wallTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.rectangleTile01_1.geometry}
+          geometry={nodes.rectangleTile01_1["geometry"]}
           material={materials.wallTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.rectangleTile02_1.geometry}
+          geometry={nodes.rectangleTile02_1["geometry"]}
           material={materials.wallTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.rectangleTile03_1.geometry}
+          geometry={nodes.rectangleTile03_1["geometry"]}
           material={materials.wallTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.rectangleTile04_1.geometry}
+          geometry={nodes.rectangleTile04_1["geometry"]}
           material={materials.wallTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.rectangleTile05_1.geometry}
+          geometry={nodes.rectangleTile05_1["geometry"]}
           material={materials.wallTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.rectangleTile06_1.geometry}
+          geometry={nodes.rectangleTile06_1["geometry"]}
           material={materials.wallTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.rectangleTile07_1.geometry}
+          geometry={nodes.rectangleTile07_1["geometry"]}
           material={materials.wallTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.rectangleTile08_1.geometry}
+          geometry={nodes.rectangleTile08_1["geometry"]}
           material={materials.wallTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.rectangleTile09_1.geometry}
+          geometry={nodes.rectangleTile09_1["geometry"]}
           material={materials.wallTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.rectangleTile10_1.geometry}
+          geometry={nodes.rectangleTile10_1["geometry"]}
           material={materials.wallTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.rectangleTile11_1.geometry}
+          geometry={nodes.rectangleTile11_1["geometry"]}
           material={materials.wallTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.rectangleTile12_1.geometry}
+          geometry={nodes.rectangleTile12_1["geometry"]}
           material={materials.wallTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.rectangleTile13_1.geometry}
+          geometry={nodes.rectangleTile13_1["geometry"]}
           material={materials.wallTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.rectangleTile14_1.geometry}
+          geometry={nodes.rectangleTile14_1["geometry"]}
           material={materials.wallTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.rectangleTile15_1.geometry}
+          geometry={nodes.rectangleTile15_1["geometry"]}
           material={materials.wallTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.rectangleTile16_1.geometry}
+          geometry={nodes.rectangleTile16_1["geometry"]}
           material={materials.wallTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.rectangleTile17_1.geometry}
+          geometry={nodes.rectangleTile17_1["geometry"]}
           material={materials.wallTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.rectangleTile18_1.geometry}
+          geometry={nodes.rectangleTile18_1["geometry"]}
           material={materials.wallTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.rectangleTile19_1.geometry}
+          geometry={nodes.rectangleTile19_1["geometry"]}
           material={materials.wallTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.rectangleTile20_1.geometry}
+          geometry={nodes.rectangleTile20_1["geometry"]}
           material={materials.wallTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.rectangleTile21_1.geometry}
+          geometry={nodes.rectangleTile21_1["geometry"]}
           material={materials.wallTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.rectangleTile22_1.geometry}
+          geometry={nodes.rectangleTile22_1["geometry"]}
           material={materials.wallTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.rectangleTile23_1.geometry}
+          geometry={nodes.rectangleTile23_1["geometry"]}
           material={materials.wallTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.rectangleTile24_1.geometry}
+          geometry={nodes.rectangleTile24_1["geometry"]}
           material={materials.wallTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.rectangleTile25_1.geometry}
+          geometry={nodes.rectangleTile25_1["geometry"]}
           material={materials.wallTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.rectangleTile26_1.geometry}
+          geometry={nodes.rectangleTile26_1["geometry"]}
           material={materials.wallTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.rectangleTile27_1.geometry}
+          geometry={nodes.rectangleTile27_1["geometry"]}
           material={materials.wallTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.rectangleTile28_1.geometry}
+          geometry={nodes.rectangleTile28_1["geometry"]}
           material={materials.wallTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.rectangleTile29_1.geometry}
+          geometry={nodes.rectangleTile29_1["geometry"]}
           material={materials.wallTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.rectangleTile30_1.geometry}
+          geometry={nodes.rectangleTile30_1["geometry"]}
           material={materials.wallTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.rectangleTile31_1.geometry}
+          geometry={nodes.rectangleTile31_1["geometry"]}
           material={materials.wallTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.rectangleTile32_1.geometry}
+          geometry={nodes.rectangleTile32_1["geometry"]}
           material={materials.wallTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.rectangleTile33_1.geometry}
+          geometry={nodes.rectangleTile33_1["geometry"]}
           material={materials.wallTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.rectangleTile34_1.geometry}
+          geometry={nodes.rectangleTile34_1["geometry"]}
           material={materials.wallTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.rectangleTile35_1.geometry}
+          geometry={nodes.rectangleTile35_1["geometry"]}
           material={materials.wallTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.rectangleTile36_1.geometry}
+          geometry={nodes.rectangleTile36_1["geometry"]}
           material={materials.wallTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.rectangleTile37_1.geometry}
+          geometry={nodes.rectangleTile37_1["geometry"]}
           material={materials.wallTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.rectangleTile38_1.geometry}
+          geometry={nodes.rectangleTile38_1["geometry"]}
           material={materials.wallTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.rectangleTile39_1.geometry}
+          geometry={nodes.rectangleTile39_1["geometry"]}
           material={materials.wallTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.rectangleTile40_1.geometry}
+          geometry={nodes.rectangleTile40_1["geometry"]}
           material={materials.wallTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.rectangleTile41_1.geometry}
+          geometry={nodes.rectangleTile41_1["geometry"]}
           material={materials.wallTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.rectangleTile42_1.geometry}
+          geometry={nodes.rectangleTile42_1["geometry"]}
           material={materials.wallTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.rectangleTile43_1.geometry}
+          geometry={nodes.rectangleTile43_1["geometry"]}
           material={materials.wallTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.rectangleTile44_1.geometry}
+          geometry={nodes.rectangleTile44_1["geometry"]}
           material={materials.wallTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.rectangleTile45_1.geometry}
+          geometry={nodes.rectangleTile45_1["geometry"]}
           material={materials.wallTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.rectangleTile46_1.geometry}
+          geometry={nodes.rectangleTile46_1["geometry"]}
           material={materials.wallTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.rectangleTile47_1.geometry}
+          geometry={nodes.rectangleTile47_1["geometry"]}
           material={materials.wallTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.rectangleTile48_1.geometry}
+          geometry={nodes.rectangleTile48_1["geometry"]}
           material={materials.wallTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.rectangleTile49_1.geometry}
+          geometry={nodes.rectangleTile49_1["geometry"]}
           material={materials.wallTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.rectangleTile50_1.geometry}
+          geometry={nodes.rectangleTile50_1["geometry"]}
           material={materials.wallTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.rectangleTile51_1.geometry}
+          geometry={nodes.rectangleTile51_1["geometry"]}
           material={materials.wallTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.rectangleTile52_1.geometry}
+          geometry={nodes.rectangleTile52_1["geometry"]}
           material={materials.wallTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.rectangleTile53_1.geometry}
+          geometry={nodes.rectangleTile53_1["geometry"]}
           material={materials.wallTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.rectangleTile54_1.geometry}
+          geometry={nodes.rectangleTile54_1["geometry"]}
           material={materials.wallTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.rectangleTile55_1.geometry}
+          geometry={nodes.rectangleTile55_1["geometry"]}
           material={materials.wallTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.rectangleTile56_1.geometry}
+          geometry={nodes.rectangleTile56_1["geometry"]}
           material={materials.wallTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.rectangleTile57_1.geometry}
+          geometry={nodes.rectangleTile57_1["geometry"]}
           material={materials.wallTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.rectangleTile58_1.geometry}
+          geometry={nodes.rectangleTile58_1["geometry"]}
           material={materials.wallTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.rectangleTile59_1.geometry}
+          geometry={nodes.rectangleTile59_1["geometry"]}
           material={materials.wallTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.rectangleTile60_1.geometry}
+          geometry={nodes.rectangleTile60_1["geometry"]}
           material={materials.wallTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.rectangleTile61_1.geometry}
+          geometry={nodes.rectangleTile61_1["geometry"]}
           material={materials.wallTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.rectangleTile62_1.geometry}
+          geometry={nodes.rectangleTile62_1["geometry"]}
           material={materials.wallTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.rectangleTile63_1.geometry}
+          geometry={nodes.rectangleTile63_1["geometry"]}
           material={materials.wallTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.rectangleTile64_1.geometry}
+          geometry={nodes.rectangleTile64_1["geometry"]}
           material={materials.wallTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.rectangleTile65_1.geometry}
+          geometry={nodes.rectangleTile65_1["geometry"]}
           material={materials.wallTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.rectangleTile66_1.geometry}
+          geometry={nodes.rectangleTile66_1["geometry"]}
           material={materials.wallTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.rectangleTile67_1.geometry}
+          geometry={nodes.rectangleTile67_1["geometry"]}
           material={materials.wallTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.rectangleTile68_1.geometry}
+          geometry={nodes.rectangleTile68_1["geometry"]}
           material={materials.wallTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.rectangleTile69_1.geometry}
+          geometry={nodes.rectangleTile69_1["geometry"]}
           material={materials.wallTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.rectangleTile70_1.geometry}
+          geometry={nodes.rectangleTile70_1["geometry"]}
           material={materials.wallTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.rectangleTile71_1.geometry}
+          geometry={nodes.rectangleTile71_1["geometry"]}
           material={materials.wallTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.rectangleTile72_1.geometry}
+          geometry={nodes.rectangleTile72_1["geometry"]}
           material={materials.wallTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.rectangleTile73_1.geometry}
+          geometry={nodes.rectangleTile73_1["geometry"]}
           material={materials.wallTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.rectangleTile74_1.geometry}
+          geometry={nodes.rectangleTile74_1["geometry"]}
           material={materials.wallTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.rectangleTile75_1.geometry}
+          geometry={nodes.rectangleTile75_1["geometry"]}
           material={materials.wallTile_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.wall_1.geometry}
+          geometry={nodes.wall_1["geometry"]}
           material={materials.wall_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.r_trimming_1.geometry}
+          geometry={nodes.r_trimming_1["geometry"]}
           material={materials.wall_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.l_trimming_1.geometry}
+          geometry={nodes.l_trimming_1["geometry"]}
           material={materials.wall_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.upperGlass_1.geometry}
+          geometry={nodes.upperGlass_1["geometry"]}
           material={materials.glass_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.lowerGlass_1.geometry}
+          geometry={nodes.lowerGlass_1["geometry"]}
           material={materials.glass_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.windowSill_1.geometry}
+          geometry={nodes.windowSill_1["geometry"]}
           material={materials.window_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.upperPaneSill_1.geometry}
+          geometry={nodes.upperPaneSill_1["geometry"]}
           material={materials.window_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.lowerPaneSill_1.geometry}
+          geometry={nodes.lowerPaneSill_1["geometry"]}
           material={materials.window_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.latchCase_1.geometry}
+          geometry={nodes.latchCase_1["geometry"]}
           material={materials.window_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.latch_1.geometry}
+          geometry={nodes.latch_1["geometry"]}
           material={materials.window_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.handle_1.geometry}
+          geometry={nodes.handle_1["geometry"]}
           material={materials.window_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.floorBase_1.geometry}
+          geometry={nodes.floorBase_1["geometry"]}
           material={materials.floor_mtl_1001}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.floorTile_1.geometry}
+          geometry={nodes.floorTile_1["geometry"]}
           material={materials.floor_mtl_1001}
         />
       </group>

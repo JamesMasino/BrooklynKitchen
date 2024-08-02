@@ -13,7 +13,7 @@ export default function App() {
   const { width, height } = useWindowSize();
 
   return (
-    <Canvas>
+    <Canvas shadows={true}>
       <Environment>
         <KitchenRoom />
         {/*<CoffeePot /> */}

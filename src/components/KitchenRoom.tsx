@@ -5,8 +5,8 @@ import { useControls } from "leva";
 
 const config = {
   "model": "kitchenRoom.glb",
-  "1k": "/kitchenRoom/1k",
-  "quality": "1k"
+  "512": "/kitchenRoom/512",
+  "quality": "512"
 };
 
 export function KitchenRoom(props) {
@@ -18,7 +18,13 @@ export function KitchenRoom(props) {
     collapsed: true
   });
   return (
-    <group {...props} position={[0, 0, 0]} rotation={[0, 0, 0]} dispose={null}>
+    <group
+      {...props}
+      position={[0, 0, 0]}
+      rotation={[0, 0, 0]}
+      castShadow
+      receiveShadow
+      dispose={null}>
       <group visible={roomProps["Room"]} scale={0.01}>
         <mesh
           castShadow

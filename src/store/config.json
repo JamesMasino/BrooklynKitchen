@@ -59,7 +59,7 @@
       },
       "sunPosition": {
         "value": {
-          "x": 0,
+          "x": -1,
           "y": 0,
           "z": 0
         }
@@ -74,13 +74,13 @@
       },
       "Collapsed": true,
       "environment": {
-        "value": "sunset"
+        "value": false
       },
       "intensity": {
         "value": 1
       },
       "preset": {
-        "value": "soft"
+        "value": "rembrandt"
       },
       "shadows": {
         "value": "true"

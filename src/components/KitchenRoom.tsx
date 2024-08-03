@@ -5,8 +5,8 @@ import { useControls } from "leva";
 
 const config = {
   "model": "kitchenRoom.glb",
-  "1k": "/kitchenRoom/1k",
-  "quality": "1k"
+  "512": "/kitchenRoom/512",
+  "quality": "512"
 };
 
 export function KitchenRoom(props) {
@@ -727,13 +727,11 @@ export function KitchenRoom(props) {
           material={materials.wall_mtl_1001}
         />
         <mesh
-          castShadow
           receiveShadow
           geometry={nodes.upperGlass_1["geometry"]}
           material={materials.glass_mtl_1001}
         />
         <mesh
-          castShadow
           receiveShadow
           geometry={nodes.lowerGlass_1["geometry"]}
           material={materials.glass_mtl_1001}

@@ -18,13 +18,7 @@ export function KitchenRoom(props) {
     collapsed: true
   });
   return (
-    <group
-      {...props}
-      position={[0, 0, 0]}
-      rotation={[0, 0, 0]}
-      castShadow
-      receiveShadow
-      dispose={null}>
+    <group {...props} position={[0, 0, 0]} rotation={[0, 0, 0]} dispose={null}>
       <group visible={roomProps["Room"]} scale={0.01}>
         <mesh
           castShadow
@@ -733,13 +727,11 @@ export function KitchenRoom(props) {
           material={materials.wall_mtl_1001}
         />
         <mesh
-          castShadow
           receiveShadow
           geometry={nodes.upperGlass_1["geometry"]}
           material={materials.glass_mtl_1001}
         />
         <mesh
-          castShadow
           receiveShadow
           geometry={nodes.lowerGlass_1["geometry"]}
           material={materials.glass_mtl_1001}

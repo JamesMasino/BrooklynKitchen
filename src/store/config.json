@@ -87,6 +87,12 @@
       }
     }
   },
+  "Fridge": {
+    "Mug": {
+      "label": "Show Fridge",
+      "value": true
+    }
+  },
   "KitchenRoom": {
     "Room": {
       "label": "Show Room",
@@ -102,6 +108,12 @@
   "Sink": {
     "Sink": {
       "label": "Show Sink",
+      "value": true
+    }
+  },
+  "UpperCabinets": {
+    "Mug": {
+      "label": "Show Upper Cabinets",
       "value": true
     }
   },

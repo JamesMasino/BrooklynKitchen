@@ -1,5 +1,5 @@
 {
-  "author": "Levi Broadnax, James Masino, Winston Palace",
+  "author": "Levi Broadnax, James Masino",
   "dependencies": {
     "@react-three/drei": "^9.107.0",
     "@react-three/fiber": "^8.16.8",
@@ -13,7 +13,7 @@
     "three": "^0.164.1",
     "zustand": "^4.5.2"
   },
-  "description": "WebGL coffee dynamics experiment",
+  "description": "A NitroColdBrew powered WebGL scene",
   "devDependencies": {
     "@types/react-dom": "^18.3.0",
     "typescript": "^5.4.5",
@@ -22,7 +22,7 @@
   },
   "license": "ISC",
   "main": "index.tsx",
-  "name": "nitro-cold-brew",
+  "name": "brooklynkitchen",
   "scripts": {
     "build": "vite build --config vite.config.js",
     "dev": "vite",

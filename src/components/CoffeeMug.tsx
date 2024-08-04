@@ -22,7 +22,7 @@ export function CoffeeMug(props) {
   return (
     <group
       {...props}
-      position={[-0, 0.915, 0.5]}
+      position={[-0.05, 0.915, 0.5]}
       rotation={[0, -70, 0]}
       dispose={null}>
       <group scale={0.01}>

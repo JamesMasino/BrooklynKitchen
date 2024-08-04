@@ -22,9 +22,10 @@ export function Footer() {
   return (
     <div className="footer">
       <div className="left">
+        {/*
         <button
           className={`fab theme-selector ${darkTheme ? "dark" : "light"}`}
-          onClick={onThemeClick}></button>
+          onClick={onThemeClick}></button>*/}
       </div>
       <div className="middle"></div>
       <div className="right">

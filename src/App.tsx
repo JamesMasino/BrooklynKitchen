@@ -1,11 +1,13 @@
 import {
+  CoffeeMaker,
   CoffeeMug,
-  /*CoffeePot, */
+  CoffeePot,
   Environment,
   Fridge,
   KitchenRoom,
   LowerCabinetSink,
   Sink,
+  Stove,
   UpperCabinets
 } from "@components";
 import { Canvas } from "@react-three/fiber";
@@ -19,16 +21,18 @@ export default function App() {
       shadows={true}
       camera={{
         fov: 45,
-        position: [10, 1, 12],
-        zoom: 2.5
+        position: [10, 1, 11],
+        zoom: 3.3
       }}>
       <Environment>
         <KitchenRoom />
-        {/*<CoffeePot /> */}
+        <CoffeePot />
         <CoffeeMug />
+        <CoffeeMaker />
         <UpperCabinets />
         <LowerCabinetSink />
         <Fridge />
+        <Stove />
         <Sink />
       </Environment>
     </Canvas>

@@ -26,7 +26,7 @@ body {
 
 canvas {
   width: 100svw;
-  height: 94svh;
+  height: 100svh; /*94svh;*/
 }
 
 .leva-c-TldsY {

@@ -5,8 +5,8 @@ import { useControls } from "leva";
 
 const config = {
   "model": "coffeePot.glb",
-  "4k": "/coffeePot/4k",
-  "quality": "4k"
+  "512": "/coffeePot/512",
+  "quality": "512"
 };
 
 export function CoffeePot(props) {
@@ -20,8 +20,8 @@ export function CoffeePot(props) {
   return (
     <group
       {...props}
-      position={[-0.3, 0.915, 0]}
-      rotation={[0, 0, 0]}
+      position={[0.04, 0.94, 0.29]}
+      rotation={[0, 0.9, 0]}
       dispose={null}>
       <group scale={0.01}>
         <mesh

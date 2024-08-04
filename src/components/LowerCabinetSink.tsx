@@ -23,7 +23,6 @@ export function LowerCabinetSink(props) {
     <group
       {...{ ...props, ...lowerCabinetSinkProps }}
       position={[0.48, 0, 0.35]}
-      rotation={[0, 0, 0]}
       dispose={null}>
       <group visible={lowerCabinetSinkProps["LowerCabinets"]} scale={0.01}>
         <mesh

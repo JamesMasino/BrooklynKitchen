@@ -738,7 +738,6 @@ export function KitchenRoom(props) {
         />
         <mesh
           castShadow
-          receiveShadow
           geometry={nodes.windowSill_1["geometry"]}
           material={materials.window_mtl_1001}
         />

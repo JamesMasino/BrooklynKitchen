@@ -22,6 +22,7 @@ export function Footer() {
   return (
     <div className="footer">
       <div className="left">
+        <button className="footerButton">Credits</button>
         {/*
         <button
           className={`fab theme-selector ${darkTheme ? "dark" : "light"}`}

@@ -22,11 +22,14 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+  background-color: rgb(24, 24, 24);
 }
 
 canvas {
   width: 100svw;
   height: 100svh; /*94svh;*/
+  border-radius: 2.5vw;
+  /*background-color: rgb(255, 245, 224); Sky color test*/
 }
 
 .leva-c-TldsY {

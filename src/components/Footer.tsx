@@ -4,7 +4,7 @@ import shuffle from "just-shuffle";
 import { MouseEvent, useEffect } from "react";
 import "./footer.css";
 
-export function Footer() {
+export function Footer({ toggleDivVisibility }) {
   const authors = useConfig(e => e.Authors);
   const [darkTheme, toggleDarkTheme] = useToggle(false);
 
@@ -22,7 +22,10 @@ export function Footer() {
   return (
     <div className="footer">
       <div className="left">
-        <button className="footerButton">Credits</button>
+        <button className="footerButton">Toggle Titles</button>
+        <button onClick={toggleDivVisibility} className="footerButton">
+          Credits
+        </button>
         {/*
         <button
           className={`fab theme-selector ${darkTheme ? "dark" : "light"}`}

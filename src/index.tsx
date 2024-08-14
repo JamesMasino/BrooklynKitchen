@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 
@@ -9,6 +9,13 @@ import "./index.css";
 
 function Root() {
   const { width, height } = useWindowSize();
+
+  const [isDivVisible, setIsDivVisible] = useState(false);
+
+  const toggleDivVisibility = () => {
+    setIsDivVisible(!isDivVisible);
+  };
+
   return (
     <>
       <div className="leva">
@@ -16,8 +23,8 @@ function Root() {
       </div>
       <App />
       <Header />
-      <Overlay />
-      <Footer />
+      <Overlay isDivVisible={isDivVisible} />
+      <Footer toggleDivVisibility={toggleDivVisibility} />
     </>
   );
 }

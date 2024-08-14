@@ -1,21 +1,6 @@
-import { useToggle } from "@uidotdev/usehooks";
-import { MouseEvent, useEffect } from "react";
 import "./overlay.css";
 
-export function Overlay() {
-  const [darkTheme, toggleDarkTheme] = useToggle(false);
-
-  useEffect(() => {
-    const { style } = document.documentElement;
-    style.setProperty("color-scheme", darkTheme ? "light" : "dark");
-  }, [darkTheme]);
-
-  function onThemeClick(ev: MouseEvent) {
-    ev.preventDefault();
-    ev.stopPropagation();
-    toggleDarkTheme();
-  }
-
+export function Overlay({ isDivVisible }) {
   return (
     <div className="screen">
       <div className="largeColumn">
@@ -28,7 +13,11 @@ export function Overlay() {
           <span className="subTitle">MAUVE x DR. COFFEE</span>
         </div>
       </div>
-      <div className="smallColumn"></div>
+      {isDivVisible && (
+        <div className="smallColumn">
+          <div className="model"></div>
+        </div>
+      )}
     </div>
   );
 }

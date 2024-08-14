@@ -1,44 +1,57 @@
 .screen {
   z-index: 1;
-  background-color: rgba(223, 223, 223, 0.3);
-  width: 100svw;
-  max-width: 100svw;
-  height: 100svh;
+  /* background-color: rgba(223, 223, 223, 0.3); */
+  width: 100%;
   display: flex;
   transition: all 0.2s ease-in-out;
   overflow: hidden;
   position: fixed;
   top: 0;
   padding: 0;
-  margin: 2.5svw 0 34svw 0;
+  margin: 2% 0 0 0;
   pointer-events: none;
 }
 
 .largeColumn {
-  background-color: rgba(223, 223, 223, 0.3);
-  display: inline-block;
-  overflow-x: wrap;
-  min-width: 60svw;
-  max-width: 60svw;
-  max-height: 100%;
+  /* background-color: rgba(163, 144, 79, 0.3); */
+  position: relative;
+  display: block;
+  max-width: 60%;
+  height: 93vh;
+  z-index: 0;
+  overflow: hidden;
 }
 
 .smallColumn {
-  background-color: rgba(66, 25, 25, 0.575);
-  display: inline-block;
-  overflow-x: wrap;
-  min-width: 40svw;
-  max-width: 40svw;
-  max-height: 100%;
+  /* background-color: rgba(66, 25, 25, 0.575); */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  height: 93vh;
 }
 
 .block {
-  background-color: rgba(110, 155, 100, 0.3);
+  /* background-color: rgba(110, 155, 100, 0.3); */
   position: relative;
-  display: flex;
+  display: inline-flex;
   overflow: wrap;
-  padding: 0;
-  margin: 0;
+  padding: 2svw;
+  margin: 2svw;
+}
+
+.model {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.295);
+  backdrop-filter: blur(5px);
+  width: 80%;
+  height: 80%;
+  transition: all 0.2s ease-in-out;
+  border-radius: 2svw;
+  padding: 2svw;
+  margin: 2svw;
 }
 
 .title {
@@ -66,8 +79,9 @@
 
 @media only screen and (max-width: 400px) {
   .largeColumn {
-    width: 100svw;
-    max-width: 100svw;
+    min-width: 95%;
+    max-height: 40vh;
+    border-radius: 8vw;
   }
 }
 

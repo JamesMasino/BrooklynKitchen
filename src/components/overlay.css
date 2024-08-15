@@ -8,18 +8,28 @@
   position: fixed;
   top: 0;
   padding: 0;
-  margin: 2% 0 0 0;
+  margin: 0;
   pointer-events: none;
+}
+
+.columnContainer {
+  /* background-color: rgba(193, 105, 219, 0.3); */
+  position: fixed;
+  display: flex;
+  justify-content: start;
+  min-width: 100%;
+  min-height: 100%;
+  max-width: 100%;
 }
 
 .largeColumn {
   /* background-color: rgba(163, 144, 79, 0.3); */
   position: relative;
-  display: block;
-  max-width: 60%;
-  height: 93vh;
-  z-index: 0;
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  overflow: wrap;
 }
 
 .smallColumn {
@@ -27,49 +37,50 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  width: 80%;
-  height: 93vh;
+  justify-content: center;
+  align-items: end;
+  overflow: wrap;
 }
 
 .block {
   /* background-color: rgba(110, 155, 100, 0.3); */
   position: relative;
   display: inline-flex;
-  overflow: wrap;
-  padding: 2svw;
-  margin: 2svw;
+  padding: 0 2svw 2svw 2svw;
+  margin: 0;
+  max-width: 60%;
 }
 
 .model {
-  position: relative;
-  background-color: rgba(255, 255, 255, 0.295);
-  backdrop-filter: blur(5px);
-  width: 80%;
-  height: 80%;
+  background-color: rgba(126, 126, 126, 0.568);
+  position: fixed;
+  right: 0;
+  backdrop-filter: blur(10px);
   transition: all 0.2s ease-in-out;
-  border-radius: 2svw;
+  border-radius: 2svw 0 0 2svw;
   padding: 2svw;
-  margin: 2svw;
+  margin: 2svw 0 2svw 2svw;
+  pointer-events: all;
+  max-width: 40%;
 }
 
 .title {
+  position: relative;
   font-size: 10svw;
   line-height: 8svw;
   text-align: left;
   text-wrap: wrap;
   font-weight: 900;
-  margin: 3svw 0 0 3svw;
+  align-items: start;
 }
 
 .subTitle {
+  position: relative;
   font-size: 2svw;
   line-height: 8svw;
   text-align: left;
   text-wrap: wrap;
   font-weight: 600;
-  margin: 3svw 0 0 3svw;
 }
 
 .styleText {
@@ -77,16 +88,34 @@
   font-style: italic;
 }
 
-@media only screen and (max-width: 400px) {
-  .largeColumn {
-    min-width: 95%;
-    max-height: 40vh;
-    border-radius: 8vw;
+@media only screen and (max-width: 1000px) {
+  .block {
+    position: relative;
+    max-width: 100%;
+    min-width: 100%;
+  }
+  .model {
+    padding-left: 10svw;
+    max-width: 100%;
+    border-radius: 2svw;
+    padding: 6svw;
+    margin: 10svw;
   }
 }
 
-@media only screen and (max-width: 400px) {
-  .smallColumn {
-    display: none;
+@media only screen and (min-width: 2000px) {
+  .block {
+    max-width: 40%;
+  }
+  .model {
+    max-width: 20%;
+  }
+  .title {
+    font-size: 7svw;
+    line-height: 6svw;
+  }
+  .subTitle {
+    font-size: 1svw;
+    line-height: 6svw;
   }
 }

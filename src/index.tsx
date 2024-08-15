@@ -10,21 +10,32 @@ import "./index.css";
 function Root() {
   const { width, height } = useWindowSize();
 
-  const [isDivVisible, setIsDivVisible] = useState(false);
+  const [isCredVisible, setIsCredVisible] = useState(false);
+  const [isTitlesVisible, setIsTitlesVisible] = useState(true);
 
-  const toggleDivVisibility = () => {
-    setIsDivVisible(!isDivVisible);
+  const toggleCredVisibility = () => {
+    setIsCredVisible(!isCredVisible);
+  };
+  const toggleTitlesVisibility = () => {
+    setIsTitlesVisible(!isTitlesVisible);
   };
 
   return (
     <>
       <div className="leva">
-        <Leva hidden={Math.min(height, width) > 767} collapsed={width < 1000} />
+        <Leva hidden={Math.min(height, width) > 0} collapsed={width < 1000} />
+        {/* 767 */}
       </div>
       <App />
       <Header />
-      <Overlay isDivVisible={isDivVisible} />
-      <Footer toggleDivVisibility={toggleDivVisibility} />
+      <Overlay
+        isCredVisible={isCredVisible}
+        isTitlesVisible={isTitlesVisible}
+      />
+      <Footer
+        toggleCredVisibility={toggleCredVisibility}
+        toggleTitlesVisibility={toggleTitlesVisibility}
+      />
     </>
   );
 }

@@ -23,11 +23,12 @@ export function Overlay({ isCredVisible, isTitlesVisible }) {
             <div className="model">
               <h1>What is this?</h1>
               <p>
-                Welcome to Brooklyn Kitchen! A React Three Fiber scene with a
-                lot of meshes and extensively curated texture maps. Meant to
-                show off scale and capability of what's possible, Brooklyn
-                Kitchen is a spec web advertisement designed by MAUVE, a
-                Brooklyn, New York based creative studio.
+                Welcome to Brooklyn Kitchen! A (work in progress) React Three
+                Fiber scene with a lot of meshes and extensively curated texture
+                maps. Meant to show off scale and capability of what's possible,
+                Brooklyn Kitchen is a spec web advertisement designed by MAUVE
+                in Brooklyn, New York, a creative partnership that focuses on
+                preproduction services for feature films and ads based in NYC.
               </p>
               <h1>Credits</h1>
               <p>
@@ -48,7 +49,7 @@ export function Overlay({ isCredVisible, isTitlesVisible }) {
                 Considering this medium for your brand or ad? You're in the
                 right place.
               </p>
-              <button className="footerButton">mauve.film ➡</button>
+              <a href="mailto:james@masino.art">james@masino.art</a>
             </div>
           )}
         </div>

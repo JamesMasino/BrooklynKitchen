@@ -23,11 +23,14 @@ body {
   margin: 0;
   padding: 0;
   background-color: rgb(24, 24, 24);
+  overflow: hidden;
 }
 
 canvas {
-  width: 100svw;
-  height: 100svh; /*94svh;*/
+  min-width: 100svw;
+  max-width: 100svw;
+  min-height: 100svh; /*94svh;*/
+  max-height: 100svw;
   border-radius: 2.5vw;
   /*background-color: rgb(255, 245, 224); Sky color test*/
 }

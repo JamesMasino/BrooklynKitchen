@@ -5,6 +5,7 @@
   height: 2.5%;
   display: flex;
   flex-direction: center;
+  justify-content: center;
   align-items: center;
   transition: all 0.2s ease-in-out;
   overflow: hidden;
@@ -99,8 +100,20 @@ button.fab {
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 767px) {
   .footer {
+    height: 7%;
+    padding: 0.25svw;
+    background-color: rgba(255, 255, 255, 0);
+  }
+  .left {
+    min-width: 100%;
+    margin: 2.5;
+  }
+  .middle {
+    display: none;
+  }
+  .right {
     display: none;
   }
 }

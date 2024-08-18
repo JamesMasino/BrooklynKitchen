@@ -31,7 +31,8 @@ canvas {
   max-width: 100svw;
   min-height: 100svh; /*94svh;*/
   max-height: 100svw;
-  border-radius: 2.5vw;
+  border-radius: 2.5vw 2.5vw 0 0;
+  /* transition: all 0.2s ease-in-out; This is funny! */
   /*background-color: rgb(255, 245, 224); Sky color test*/
 }
 
@@ -47,4 +48,24 @@ canvas {
 
 a {
   color: rgb(255, 255, 255);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ffffff00;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ffffffb6;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
 }

@@ -1,3 +1,4 @@
+import { Logo } from "./Logo";
 import "./overlay.css";
 
 export function Overlay({ isCredVisible, isTitlesVisible }) {
@@ -14,7 +15,9 @@ export function Overlay({ isCredVisible, isTitlesVisible }) {
           )}
           {isTitlesVisible && (
             <div className="block">
-              <span className="subTitle">MAUVE x DR. COFFEE</span>
+              <div className="subTitle">
+                <Logo />
+              </div>
             </div>
           )}
         </div>

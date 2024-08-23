@@ -27,11 +27,11 @@ export function Overlay({ isCredVisible, isTitlesVisible }) {
               <h1>What is this?</h1>
               <p>
                 Welcome to Brooklyn Kitchen! A (work in progress) React Three
-                Fiber scene with a lot of meshes and extensively curated texture
-                maps. Meant to show off scale and capability of what's possible,
-                Brooklyn Kitchen is a spec web advertisement designed by MAUVE
-                in Brooklyn, New York, a creative partnership that focuses on
-                preproduction services for feature films and ads based in NYC.
+                Fiber scene with a lot of meshes and texture maps. Meant to show
+                off scale and capability, Brooklyn Kitchen is a spec web
+                advertisement designed by MAUVE, a creative partnership that
+                focuses on preproduction services for feature films and ads
+                based in NYC.
               </p>
               <h1>Credits</h1>
               <p>
@@ -39,13 +39,15 @@ export function Overlay({ isCredVisible, isTitlesVisible }) {
                 <a href="https://github.com/SystemStack/nitro-cold-brew">
                   NitroColdBrew
                 </a>
-                , an open-source framework using React Three Fiber put together
-                by <a href="https://github.com/SystemStack">Levi Broadnax</a>.
+                , put together by{" "}
+                <a href="https://github.com/SystemStack">Levi Broadnax</a>,
+                which in itself is an open-source webGL experiment.
               </p>
               <p>
-                All 3D models, textures, lighting, front-end UI elements, and
-                overall art direction is created by{" "}
-                <a href="https://jamesmasino.com/">James Masino</a> at MAUVE.
+                All 3D models, textures, lighting, and front-end UI elements are
+                created by <a href="https://jamesmasino.com/">James Masino</a>{" "}
+                of MAUVE. Creative direction by{" "}
+                <a href="https://www.maeganmann.com/">Mae Mann</a> of MAUVE.
               </p>
               <h1>Contact</h1>
               <p>

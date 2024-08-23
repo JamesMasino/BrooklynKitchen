@@ -1,0 +1,121 @@
+.screen {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  display: flex;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  pointer-events: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.columnContainer {
+  position: fixed;
+  display: flex;
+  justify-content: start;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+}
+
+.largeColumn {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  overflow: wrap;
+}
+
+.smallColumn {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  overflow: wrap;
+}
+
+.block {
+  position: relative;
+  display: inline-flex;
+  max-width: 60%;
+  margin: 0;
+  padding: 0 2svw 2svw 2svw;
+  transition: all 0.2s ease-in-out;
+}
+
+.model {
+  position: fixed;
+  right: 0;
+  max-width: 40%;
+  margin: 2svw 0 2svw 2svw;
+  padding: 2svw;
+  background-color: rgba(126, 126, 126, 0.568);
+  border-radius: 2svw 0 0 2svw;
+  backdrop-filter: blur(10px);
+  transition: all 0.2s ease-in-out;
+  pointer-events: all;
+}
+
+.title {
+  position: relative;
+  align-items: start;
+  font-size: 10svw;
+  line-height: 8svw;
+  text-align: left;
+  text-wrap: wrap;
+  font-weight: 900;
+}
+
+.subTitle {
+  position: relative;
+  width: 10svw;
+  max-height: 8svw;
+}
+
+.styleText {
+  font-weight: 600;
+  font-style: italic;
+}
+
+@media only screen and (max-width: 1000px) {
+  .block {
+    position: relative;
+    min-width: 100%;
+    max-width: 100%;
+  }
+  .model {
+    max-width: 100%;
+    max-height: 70%;
+    margin: 10svw;
+    overflow-y: scroll;
+    padding: 6svw;
+    border-radius: 2svw;
+  }
+}
+
+@media only screen and (max-width: 671px) {
+  .model {
+    border-radius: 2svw 0 0 2svw;
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+  .block {
+    max-width: 40%;
+  }
+  .model {
+    max-width: 20%;
+  }
+  .title {
+    font-size: 7svw;
+    line-height: 6svw;
+  }
+  .subTitle {
+    font-size: 1svw;
+    line-height: 6svw;
+  }
+}

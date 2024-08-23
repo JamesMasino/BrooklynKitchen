@@ -1,0 +1,64 @@
+.header {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  display: flex;
+  flex-direction: center;
+  align-items: center;
+  width: 100svw;
+  max-width: 100svw;
+  height: 2.5%;
+  padding: 0.25svw;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+  /* background-color: rgba(255, 255, 255, 0.295);
+  backdrop-filter: blur(5px); Bar Background */
+}
+
+.logoLocation {
+  display: flex;
+  min-width: 10svw;
+  margin-left: 2%;
+  align-items: center;
+  padding-top: 0.5rem;
+}
+
+.menuLocation {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+  min-width: 85%;
+  margin-right: 2rem;
+  padding-top: 0.5rem;
+}
+
+.menuButton {
+  display: flex;
+  margin-bottom: 0.25rem;
+  padding: 0.5rem;
+  background-color: rgba(223, 223, 223, 0.068);
+  border-style: none;
+  border-color: white;
+  border-radius: 0.5rem;
+  border-width: 1px, 1px, 1px, 1px;
+  font-size: 1.2rem;
+  box-shadow: 0 1px #ffffff3d;
+  line-height: 1rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.menuButton:hover {
+  background-color: rgba(223, 223, 223, 0.281);
+}
+
+.menuButton:active {
+  border-color: rgba(49, 49, 49, 0.116);
+  transform: translateY(2px);
+}
+
+@media only screen and (max-width: 400px) {
+  .header {
+    display: none;
+  }
+}

@@ -1,18 +1,26 @@
 .footer {
+  position: fixed;
+  z-index: 2;
+  bottom: 0;
+  display: flex;
+  flex-direction: center;
+  justify-content: center;
+  align-items: center;
   width: 100svw;
   max-width: 100svw;
-  display: flex;
-  transition: all 0.2s ease-in-out;
+  height: 2.5%;
+  padding: 0.25svw;
   overflow: hidden;
-  position: fixed;
-  bottom: 0;
-  padding: 0;
-  border-top: 1px solid #d2d2d2cc;
+  background-color: rgba(255, 255, 255, 0.295);
+  backdrop-filter: blur(5px);
+  transition: all 0.2s ease-in-out;
 }
 
 .left {
-  margin-left: 1.25rem;
+  align-content: space-between;
   align-items: center;
+  margin-left: 2rem;
+  padding-bottom: 0.5rem;
 }
 
 .middle {
@@ -21,13 +29,12 @@
 }
 
 .right {
-  margin-right: 1.25rem;
   display: flex;
+  margin-right: 2rem;
 }
 
 .author {
-  margin-left: 10px;
-  margin-right: 10px;
+  margin: 0 10px 0 10px;
 }
 
 .authors {
@@ -40,16 +47,40 @@
   content: "©️ 2024";
 }
 
+.footerButton {
+  height: 2rem;
+  margin: 0.25rem 0.5rem 0 0;
+  background-color: rgba(223, 223, 223, 0.068);
+  border-style: none;
+  border-color: white;
+  border-radius: 0.5rem;
+  border-width: 1px, 1px, 1px, 1px;
+  line-height: 1rem;
+  text-align: center;
+  font-size: 1.2rem;
+  box-shadow: 0 1px #ffffff3d;
+  cursor: pointer;
+}
+
+.footerButton:hover {
+  background-color: rgba(223, 223, 223, 0.281);
+}
+
+.footerButton:active {
+  border-color: rgba(49, 49, 49, 0.116);
+  transform: translateY(2px);
+}
+
 button.fab {
-  font-size: 1.5rem;
-  border-radius: 50%;
-  border: 0;
   width: 2rem;
   height: 2rem;
+  padding: 0;
+  border-radius: 50%;
+  border: 0;
+  font-size: 1.5rem;
   line-height: 1rem;
   text-align: center;
   content: "";
-  padding: 0;
 }
 
 .fab.dark::after {
@@ -66,8 +97,20 @@ button.fab {
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 767px) {
   .footer {
+    height: 7%;
+    padding: 0.25svw;
+    background-color: rgba(255, 255, 255, 0);
+  }
+  .left {
+    min-width: 100%;
+    margin: 2.5;
+  }
+  .middle {
+    display: none;
+  }
+  .right {
     display: none;
   }
 }

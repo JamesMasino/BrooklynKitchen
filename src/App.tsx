@@ -29,6 +29,7 @@ export default function App() {
           position: [10, 1, 11],
           zoom: 3.3
         }}>
+        <Preload all />
         <Environment>
           <KitchenRoom />
           <CoffeePot />
@@ -39,7 +40,6 @@ export default function App() {
           <Fridge />
           <Stove />
           <Sink />
-          <Preload all />
         </Environment>
         <AdaptiveDpr pixelated />
       </Canvas>

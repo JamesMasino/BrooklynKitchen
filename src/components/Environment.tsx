@@ -3,11 +3,16 @@ import {
   ContactShadows,
   OrbitControls,
   Sky,
+  // SoftShadows,
   Stage
 } from "@react-three/drei";
 import { useConfig } from "@store";
 import extend from "just-extend";
 import { useControls } from "leva";
+
+export const ShadowedMesh = props => {
+  return <mesh castShadow receiveShadow {...props} />;
+};
 
 export function Environment({ children }) {
   const config = useConfig(e => e.Environment);
@@ -46,6 +51,7 @@ export function Environment({ children }) {
   return (
     <>
       <group>
+        {/* <SoftShadows {...config} samples={Math.min(15, 25)} /> */}
         <ambientLight intensity={1} position={[-2, 0, 0]} color={0xc99252} />
         <directionalLight
           castShadow

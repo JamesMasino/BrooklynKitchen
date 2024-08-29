@@ -13,10 +13,11 @@ import {
 import { AdaptiveDpr, Preload } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { useWindowSize } from "@uidotdev/usehooks";
-import { Suspense } from "react";
+import { Suspense, useState } from "react";
 
 export default function App() {
   const { width, height } = useWindowSize();
+  const [dpr, setDpr] = useState(1);
 
   return (
     <Suspense fallback={<div className="suspense"></div>}>
@@ -24,12 +25,14 @@ export default function App() {
         performance={{ min: 0.5 }}
         frameloop="demand"
         shadows={true}
+        dpr={dpr}
         camera={{
           fov: 45,
           position: [10, 1, 11],
           zoom: 3.3
         }}>
-        <Preload all />
+        <Preload />
+        <AdaptiveDpr />
         <Environment>
           <KitchenRoom />
           <CoffeePot />
@@ -41,7 +44,6 @@ export default function App() {
           <Stove />
           <Sink />
         </Environment>
-        <AdaptiveDpr pixelated />
       </Canvas>
     </Suspense>
   );

@@ -31,6 +31,7 @@ export default function App() {
           position: [10, 1, 11],
           zoom: 3.3
         }}>
+        <fog attach="fog" color="white" near={1} far={45} />
         <Preload />
         <AdaptiveDpr />
         <Environment>

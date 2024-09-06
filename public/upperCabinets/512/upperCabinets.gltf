@@ -165,13 +165,13 @@
   "images": [
     { "mimeType": "image/webp", "uri": "ridgeColor.webp" },
     { "mimeType": "image/webp", "uri": "ridgeOcclusionRoughnessMetallic.webp" },
-    { "mimeType": "image/png", "uri": "ridgeNormal.png" },
+    { "mimeType": "image/webp", "uri": "ridgeNormal.webp" },
     { "mimeType": "image/webp", "uri": "doorColor.webp" },
     { "mimeType": "image/webp", "uri": "doorOcclusionRoughnessMetallic.webp" },
-    { "mimeType": "image/png", "uri": "doorNormal.png" },
+    { "mimeType": "image/webp", "uri": "doorNormal.webp" },
     { "mimeType": "image/webp", "uri": "cabColor.webp" },
     { "mimeType": "image/webp", "uri": "cabOcclusionRoughnessMetallic.webp" },
-    { "mimeType": "image/png", "uri": "cabNormal.png" }
+    { "mimeType": "image/webp", "uri": "cabNormal.webp" }
   ],
   "buffers": [{ "uri": "upperCabinets.bin", "byteLength": 207149 }],
   "materials": [

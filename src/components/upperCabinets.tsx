@@ -1,100 +1,215 @@
-import { useGLTF } from "@react-three/drei";
+import { Detailed, useGLTF } from "@react-three/drei";
 import { useConfig } from "@store";
 import extend from "just-extend";
 import { useControls } from "leva";
+import { ShadowedMesh } from "./Environment";
 
 const config = {
   "model": "upperCabinets.glb",
   "512": "/upperCabinets/512",
-  "quality": "512"
+  "1k": "/upperCabinets/1k",
+  "2k": "/upperCabinets/2k",
+  "LOD512": "512",
+  "LOD1k": "1k",
+  "LOD2k": "2k"
+};
+const configs = {
+  LOD512: config.LOD512,
+  LOD1k: config.LOD1k,
+  LOD2k: config.LOD2k
 };
 
 export function UpperCabinets(props) {
   const upperCabinets = useConfig(e => e.UpperCabinets);
-  const { nodes, materials } = useGLTF(
-    `${config[config.quality]}/${config.model}`
+  const { nodes: nodesLOD512, materials: materials512 } = useGLTF(
+    `${config[configs.LOD512]}/${config.model}`
+  );
+  const { nodes: nodesLOD1k, materials: materials1k } = useGLTF(
+    `${config[configs.LOD1k]}/${config.model}`
+  );
+  const { nodes: nodesLOD2k, materials: materials2k } = useGLTF(
+    `${config[configs.LOD2k]}/${config.model}`
   );
   const upperCabinetsProps = useControls(
-    "Coffee Mug",
+    "Upper Cabinets",
     extend(true, upperCabinets, {}),
     { collapsed: true }
   );
   return (
-    <group {...props} position={[0, 0, 0]} dispose={null}>
-      <group scale={0.01}>
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.r_cabinent_1["geometry"]}
-          material={materials.cabinent_mtl_1001}
+    <group
+      {...props}
+      position={[0, 0, 0]}
+      visible={upperCabinetsProps["UpperCabinets"]}
+      scale={0.01}
+      dispose={null}>
+      <Detailed distances={[0, 1.9, 2.3]}>
+        <ShadowedMesh
+          geometry={nodesLOD2k.r_cabinent_1["geometry"]}
+          material={materials2k.cabinent_mtl_1001}
         />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.rm_cabinent_1["geometry"]}
-          material={materials.cabinent_mtl_1001}
+        <ShadowedMesh
+          geometry={nodesLOD1k.r_cabinent_1["geometry"]}
+          material={materials1k.cabinent_mtl_1001}
         />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.lm_cabinent_1["geometry"]}
-          material={materials.cabinent_mtl_1001}
+        <ShadowedMesh
+          geometry={nodesLOD512.r_cabinent_1["geometry"]}
+          material={materials512.cabinent_mtl_1001}
         />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.l_cabinent_1["geometry"]}
-          material={materials.cabinent_mtl_1001}
+      </Detailed>
+      <Detailed distances={[0, 1.9, 2.3]}>
+        <ShadowedMesh
+          geometry={nodesLOD2k.rm_cabinent_1["geometry"]}
+          material={materials2k.cabinent_mtl_1001}
         />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.r_bottom_1["geometry"]}
-          material={materials.cabBottom_mtl_1001}
+        <ShadowedMesh
+          geometry={nodesLOD1k.rm_cabinent_1["geometry"]}
+          material={materials1k.cabinent_mtl_1001}
         />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.rm_bottom_1["geometry"]}
-          material={materials.cabBottom_mtl_1001}
+        <ShadowedMesh
+          geometry={nodesLOD512.rm_cabinent_1["geometry"]}
+          material={materials512.cabinent_mtl_1001}
         />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.lm_bottom_1["geometry"]}
-          material={materials.cabBottom_mtl_1001}
+      </Detailed>
+      <Detailed distances={[0, 1.9, 2.3]}>
+        <ShadowedMesh
+          geometry={nodesLOD2k.lm_cabinent_1["geometry"]}
+          material={materials2k.cabinent_mtl_1001}
         />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.l_bottom_1["geometry"]}
-          material={materials.cabBottom_mtl_1001}
+        <ShadowedMesh
+          geometry={nodesLOD1k.lm_cabinent_1["geometry"]}
+          material={materials1k.cabinent_mtl_1001}
         />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.r_cabDoor_1["geometry"]}
-          material={materials.cabDoor_mtl_1001}
+        <ShadowedMesh
+          geometry={nodesLOD512.lm_cabinent_1["geometry"]}
+          material={materials512.cabinent_mtl_1001}
         />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.rm_cabDoor_1["geometry"]}
-          material={materials.cabDoor_mtl_1001}
+      </Detailed>
+      <Detailed distances={[0, 1.9, 2.3]}>
+        <ShadowedMesh
+          geometry={nodesLOD2k.l_cabinent_1["geometry"]}
+          material={materials2k.cabinent_mtl_1001}
         />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.lm_cabDoor_1["geometry"]}
-          material={materials.cabDoor_mtl_1001}
+        <ShadowedMesh
+          geometry={nodesLOD1k.l_cabinent_1["geometry"]}
+          material={materials1k.cabinent_mtl_1001}
         />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.l_cabDoor_1["geometry"]}
-          material={materials.cabDoor_mtl_1001}
+        <ShadowedMesh
+          geometry={nodesLOD512.l_cabinent_1["geometry"]}
+          material={materials512.cabinent_mtl_1001}
         />
-      </group>
+      </Detailed>
+      <Detailed distances={[0, 1.9, 2.3]}>
+        <ShadowedMesh
+          geometry={nodesLOD2k.r_bottom_1["geometry"]}
+          material={materials2k.cabBottom_mtl_1001}
+        />
+        <ShadowedMesh
+          geometry={nodesLOD1k.r_bottom_1["geometry"]}
+          material={materials1k.cabBottom_mtl_1001}
+        />
+        <ShadowedMesh
+          geometry={nodesLOD512.r_bottom_1["geometry"]}
+          material={materials512.cabBottom_mtl_1001}
+        />
+      </Detailed>
+      <Detailed distances={[0, 1.9, 2.3]}>
+        <ShadowedMesh
+          geometry={nodesLOD2k.rm_bottom_1["geometry"]}
+          material={materials2k.cabBottom_mtl_1001}
+        />
+        <ShadowedMesh
+          geometry={nodesLOD1k.rm_bottom_1["geometry"]}
+          material={materials1k.cabBottom_mtl_1001}
+        />
+        <ShadowedMesh
+          geometry={nodesLOD512.rm_bottom_1["geometry"]}
+          material={materials512.cabBottom_mtl_1001}
+        />
+      </Detailed>
+      <Detailed distances={[0, 1.9, 2.3]}>
+        <ShadowedMesh
+          geometry={nodesLOD2k.lm_bottom_1["geometry"]}
+          material={materials2k.cabBottom_mtl_1001}
+        />
+        <ShadowedMesh
+          geometry={nodesLOD1k.lm_bottom_1["geometry"]}
+          material={materials1k.cabBottom_mtl_1001}
+        />
+        <ShadowedMesh
+          geometry={nodesLOD512.lm_bottom_1["geometry"]}
+          material={materials512.cabBottom_mtl_1001}
+        />
+      </Detailed>
+      <Detailed distances={[0, 1.9, 2.3]}>
+        <ShadowedMesh
+          geometry={nodesLOD2k.l_bottom_1["geometry"]}
+          material={materials2k.cabBottom_mtl_1001}
+        />
+        <ShadowedMesh
+          geometry={nodesLOD1k.l_bottom_1["geometry"]}
+          material={materials1k.cabBottom_mtl_1001}
+        />
+        <ShadowedMesh
+          geometry={nodesLOD512.l_bottom_1["geometry"]}
+          material={materials512.cabBottom_mtl_1001}
+        />
+      </Detailed>
+      <Detailed distances={[0, 1.9, 2.3]}>
+        <ShadowedMesh
+          geometry={nodesLOD2k.r_cabDoor_1["geometry"]}
+          material={materials2k.cabDoor_mtl_1001}
+        />
+        <ShadowedMesh
+          geometry={nodesLOD1k.r_cabDoor_1["geometry"]}
+          material={materials1k.cabDoor_mtl_1001}
+        />
+        <ShadowedMesh
+          geometry={nodesLOD512.r_cabDoor_1["geometry"]}
+          material={materials512.cabDoor_mtl_1001}
+        />
+      </Detailed>
+      <Detailed distances={[0, 1.9, 2.3]}>
+        <ShadowedMesh
+          geometry={nodesLOD2k.rm_cabDoor_1["geometry"]}
+          material={materials2k.cabDoor_mtl_1001}
+        />
+        <ShadowedMesh
+          geometry={nodesLOD1k.rm_cabDoor_1["geometry"]}
+          material={materials1k.cabDoor_mtl_1001}
+        />
+        <ShadowedMesh
+          geometry={nodesLOD512.rm_cabDoor_1["geometry"]}
+          material={materials512.cabDoor_mtl_1001}
+        />
+      </Detailed>
+      <Detailed distances={[0, 1.9, 2.3]}>
+        <ShadowedMesh
+          geometry={nodesLOD2k.lm_cabDoor_1["geometry"]}
+          material={materials2k.cabDoor_mtl_1001}
+        />
+        <ShadowedMesh
+          geometry={nodesLOD1k.lm_cabDoor_1["geometry"]}
+          material={materials1k.cabDoor_mtl_1001}
+        />
+        <ShadowedMesh
+          geometry={nodesLOD512.lm_cabDoor_1["geometry"]}
+          material={materials512.cabDoor_mtl_1001}
+        />
+      </Detailed>
+      <Detailed distances={[0, 1.9, 2.3]}>
+        <ShadowedMesh
+          geometry={nodesLOD2k.l_cabDoor_1["geometry"]}
+          material={materials2k.cabDoor_mtl_1001}
+        />
+        <ShadowedMesh
+          geometry={nodesLOD1k.l_cabDoor_1["geometry"]}
+          material={materials1k.cabDoor_mtl_1001}
+        />
+        <ShadowedMesh
+          geometry={nodesLOD512.l_cabDoor_1["geometry"]}
+          material={materials512.cabDoor_mtl_1001}
+        />
+      </Detailed>
     </group>
   );
 }

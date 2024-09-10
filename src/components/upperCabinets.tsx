@@ -42,7 +42,7 @@ export function UpperCabinets(props) {
       visible={upperCabinetsProps["UpperCabinets"]}
       scale={0.01}
       dispose={null}>
-      <Detailed distances={[0, 1.9, 2.3]}>
+      <Detailed distances={[0, 2, 3]}>
         <ShadowedMesh
           geometry={nodesLOD2k.r_cabinent_1["geometry"]}
           material={materials2k.cabinent_mtl_1001}
@@ -56,7 +56,7 @@ export function UpperCabinets(props) {
           material={materials512.cabinent_mtl_1001}
         />
       </Detailed>
-      <Detailed distances={[0, 1.9, 2.3]}>
+      <Detailed distances={[0, 2, 3]}>
         <ShadowedMesh
           geometry={nodesLOD2k.rm_cabinent_1["geometry"]}
           material={materials2k.cabinent_mtl_1001}
@@ -70,7 +70,7 @@ export function UpperCabinets(props) {
           material={materials512.cabinent_mtl_1001}
         />
       </Detailed>
-      <Detailed distances={[0, 1.9, 2.3]}>
+      <Detailed distances={[0, 2, 3]}>
         <ShadowedMesh
           geometry={nodesLOD2k.lm_cabinent_1["geometry"]}
           material={materials2k.cabinent_mtl_1001}
@@ -84,7 +84,7 @@ export function UpperCabinets(props) {
           material={materials512.cabinent_mtl_1001}
         />
       </Detailed>
-      <Detailed distances={[0, 1.9, 2.3]}>
+      <Detailed distances={[0, 2, 3]}>
         <ShadowedMesh
           geometry={nodesLOD2k.l_cabinent_1["geometry"]}
           material={materials2k.cabinent_mtl_1001}
@@ -98,7 +98,7 @@ export function UpperCabinets(props) {
           material={materials512.cabinent_mtl_1001}
         />
       </Detailed>
-      <Detailed distances={[0, 1.9, 2.3]}>
+      <Detailed distances={[0, 2, 3]}>
         <ShadowedMesh
           geometry={nodesLOD2k.r_bottom_1["geometry"]}
           material={materials2k.cabBottom_mtl_1001}
@@ -112,7 +112,7 @@ export function UpperCabinets(props) {
           material={materials512.cabBottom_mtl_1001}
         />
       </Detailed>
-      <Detailed distances={[0, 1.9, 2.3]}>
+      <Detailed distances={[0, 2, 3]}>
         <ShadowedMesh
           geometry={nodesLOD2k.rm_bottom_1["geometry"]}
           material={materials2k.cabBottom_mtl_1001}
@@ -126,7 +126,7 @@ export function UpperCabinets(props) {
           material={materials512.cabBottom_mtl_1001}
         />
       </Detailed>
-      <Detailed distances={[0, 1.9, 2.3]}>
+      <Detailed distances={[0, 2, 3]}>
         <ShadowedMesh
           geometry={nodesLOD2k.lm_bottom_1["geometry"]}
           material={materials2k.cabBottom_mtl_1001}
@@ -140,7 +140,7 @@ export function UpperCabinets(props) {
           material={materials512.cabBottom_mtl_1001}
         />
       </Detailed>
-      <Detailed distances={[0, 1.9, 2.3]}>
+      <Detailed distances={[0, 2, 3]}>
         <ShadowedMesh
           geometry={nodesLOD2k.l_bottom_1["geometry"]}
           material={materials2k.cabBottom_mtl_1001}
@@ -154,7 +154,7 @@ export function UpperCabinets(props) {
           material={materials512.cabBottom_mtl_1001}
         />
       </Detailed>
-      <Detailed distances={[0, 1.9, 2.3]}>
+      <Detailed distances={[0, 2, 3]}>
         <ShadowedMesh
           geometry={nodesLOD2k.r_cabDoor_1["geometry"]}
           material={materials2k.cabDoor_mtl_1001}
@@ -168,7 +168,7 @@ export function UpperCabinets(props) {
           material={materials512.cabDoor_mtl_1001}
         />
       </Detailed>
-      <Detailed distances={[0, 1.9, 2.3]}>
+      <Detailed distances={[0, 2, 3]}>
         <ShadowedMesh
           geometry={nodesLOD2k.rm_cabDoor_1["geometry"]}
           material={materials2k.cabDoor_mtl_1001}
@@ -182,7 +182,7 @@ export function UpperCabinets(props) {
           material={materials512.cabDoor_mtl_1001}
         />
       </Detailed>
-      <Detailed distances={[0, 1.9, 2.3]}>
+      <Detailed distances={[0, 2, 3]}>
         <ShadowedMesh
           geometry={nodesLOD2k.lm_cabDoor_1["geometry"]}
           material={materials2k.cabDoor_mtl_1001}
@@ -196,7 +196,7 @@ export function UpperCabinets(props) {
           material={materials512.cabDoor_mtl_1001}
         />
       </Detailed>
-      <Detailed distances={[0, 1.9, 2.3]}>
+      <Detailed distances={[0, 2, 3]}>
         <ShadowedMesh
           geometry={nodesLOD2k.l_cabDoor_1["geometry"]}
           material={materials2k.cabDoor_mtl_1001}

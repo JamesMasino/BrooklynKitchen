@@ -105,13 +105,13 @@
   "images": [
     { "mimeType": "image/webp", "uri": "caseColor.webp" },
     { "mimeType": "image/webp", "uri": "caseOcclusionRoughnessMetallic.webp" },
-    { "mimeType": "image/png", "uri": "caseNormal.png" },
+    { "mimeType": "image/webp", "uri": "caseNormal.webp" },
     { "mimeType": "image/webp", "uri": "doorColor.webp" },
     { "mimeType": "image/webp", "uri": "doorOcclusionRoughnessMetallic.webp" },
-    { "mimeType": "image/png", "uri": "doorNormal.png" },
+    { "mimeType": "image/webp", "uri": "doorNormal.webp" },
     { "mimeType": "image/webp", "uri": "handleColor.webp" },
     { "mimeType": "image/webp", "uri": "handleOcclusionRoughnessMetallic.webp" },
-    { "mimeType": "image/png", "uri": "handleNormal.png" }
+    { "mimeType": "image/webp", "uri": "handleNormal.webp" }
   ],
   "buffers": [{ "uri": "fridge.bin", "byteLength": 88534 }],
   "materials": [

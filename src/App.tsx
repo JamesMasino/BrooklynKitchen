@@ -10,14 +10,14 @@ import {
   Stove,
   UpperCabinets
 } from "@components";
-import { AdaptiveDpr, Preload } from "@react-three/drei";
+import { AdaptiveDpr, AdaptiveEvents, Preload } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { useWindowSize } from "@uidotdev/usehooks";
 import { Suspense, useState } from "react";
 
 export default function App() {
   const { width, height } = useWindowSize();
-  const [dpr, setDpr] = useState(1);
+  const [dpr, setDpr] = useState(0.9);
 
   return (
     <Suspense fallback={<div className="suspense"></div>}>
@@ -32,9 +32,10 @@ export default function App() {
           zoom: 3.3
         }}>
         <fog attach="fog" color="white" near={1} far={55} />
-        <Preload />
         <AdaptiveDpr />
+        <AdaptiveEvents />
         <Environment>
+          <Preload all />
           <KitchenRoom />
           <CoffeePot />
           <CoffeeMug />

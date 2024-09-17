@@ -1,7 +1,7 @@
 {
-  "asset": { "generator": "glTF-Transform v3.10.0", "version": "2.0" },
+  "asset": { "generator": "glTF-Transform v4.0.2", "version": "2.0" },
   "accessors": [
-    { "type": "SCALAR", "componentType": 5125, "count": 42480 },
+    { "type": "SCALAR", "componentType": 5123, "count": 42480 },
     { "type": "VEC3", "componentType": 5126, "count": 7814 },
     {
       "type": "VEC3",
@@ -12,7 +12,7 @@
     },
     { "type": "VEC4", "componentType": 5126, "count": 7814 },
     { "type": "VEC2", "componentType": 5126, "count": 7814 },
-    { "type": "SCALAR", "componentType": 5125, "count": 6480 },
+    { "type": "SCALAR", "componentType": 5123, "count": 6480 },
     { "type": "VEC3", "componentType": 5126, "count": 1184 },
     {
       "type": "VEC3",
@@ -23,7 +23,7 @@
     },
     { "type": "VEC4", "componentType": 5126, "count": 1184 },
     { "type": "VEC2", "componentType": 5126, "count": 1184 },
-    { "type": "SCALAR", "componentType": 5125, "count": 47184 },
+    { "type": "SCALAR", "componentType": 5123, "count": 47184 },
     { "type": "VEC3", "componentType": 5126, "count": 8667 },
     {
       "type": "VEC3",
@@ -34,7 +34,7 @@
     },
     { "type": "VEC4", "componentType": 5126, "count": 8667 },
     { "type": "VEC2", "componentType": 5126, "count": 8667 },
-    { "type": "SCALAR", "componentType": 5125, "count": 9744 },
+    { "type": "SCALAR", "componentType": 5123, "count": 9744 },
     { "type": "VEC3", "componentType": 5126, "count": 1934 },
     {
       "type": "VEC3",
@@ -45,7 +45,7 @@
     },
     { "type": "VEC4", "componentType": 5126, "count": 1934 },
     { "type": "VEC2", "componentType": 5126, "count": 1934 },
-    { "type": "SCALAR", "componentType": 5125, "count": 13872 },
+    { "type": "SCALAR", "componentType": 5123, "count": 13872 },
     { "type": "VEC3", "componentType": 5126, "count": 2598 },
     {
       "type": "VEC3",
@@ -56,7 +56,7 @@
     },
     { "type": "VEC4", "componentType": 5126, "count": 2598 },
     { "type": "VEC2", "componentType": 5126, "count": 2598 },
-    { "type": "SCALAR", "componentType": 5125, "count": 20064 },
+    { "type": "SCALAR", "componentType": 5123, "count": 20064 },
     { "type": "VEC3", "componentType": 5126, "count": 3812 },
     {
       "type": "VEC3",
@@ -69,12 +69,12 @@
     { "type": "VEC2", "componentType": 5126, "count": 3812 }
   ],
   "bufferViews": [
-    { "buffer": 0, "byteOffset": 0, "byteLength": 56975 },
-    { "buffer": 0, "byteOffset": 56975, "byteLength": 7744 },
-    { "buffer": 0, "byteOffset": 64719, "byteLength": 69006 },
-    { "buffer": 0, "byteOffset": 133725, "byteLength": 16542 },
-    { "buffer": 0, "byteOffset": 150267, "byteLength": 19997 },
-    { "buffer": 0, "byteOffset": 170264, "byteLength": 35941 }
+    { "buffer": 0, "byteOffset": 0, "byteLength": 56974 },
+    { "buffer": 0, "byteOffset": 56974, "byteLength": 7744 },
+    { "buffer": 0, "byteOffset": 64718, "byteLength": 69006 },
+    { "buffer": 0, "byteOffset": 133724, "byteLength": 16542 },
+    { "buffer": 0, "byteOffset": 150266, "byteLength": 19997 },
+    { "buffer": 0, "byteOffset": 170263, "byteLength": 35941 }
   ],
   "samplers": [
     { "magFilter": 9729, "minFilter": 9985, "wrapS": 10497, "wrapT": 10497 }
@@ -96,7 +96,7 @@
       "mimeType": "image/webp",
       "uri": "chromeOcclusionRoughnessMetallic.webp"
     },
-    { "mimeType": "image/png", "uri": "chromeNormal.png" },
+    { "mimeType": "image/webp", "uri": "chromeNormal.webp" },
     { "mimeType": "image/webp", "uri": "glassColor.webp" },
     { "mimeType": "image/webp", "uri": "glassOcclusionRoughnessMetallic.webp" },
     { "mimeType": "image/webp", "uri": "glassNormal.webp" },
@@ -105,9 +105,9 @@
       "mimeType": "image/webp",
       "uri": "plasticOcclusionRoughnessMetallic.webp"
     },
-    { "mimeType": "image/png", "uri": "plasticNormal.png" }
+    { "mimeType": "image/webp", "uri": "plasticNormal.webp" }
   ],
-  "buffers": [{ "uri": "coffeePot.bin", "byteLength": 206205 }],
+  "buffers": [{ "uri": "coffeePot.bin", "byteLength": 206204 }],
   "materials": [
     {
       "name": "chrome_1001",

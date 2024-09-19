@@ -17,12 +17,12 @@ import { Suspense, useState } from "react";
 
 export default function App() {
   const { width, height } = useWindowSize();
-  const [dpr, setDpr] = useState(0.9);
+  const [dpr, setDpr] = useState(1);
 
   return (
     <Suspense fallback={<div className="suspense"></div>}>
       <Canvas
-        performance={{ min: 0.5 }}
+        performance={{ max: 0.5 }}
         frameloop="demand"
         shadows={true}
         dpr={dpr}
@@ -32,7 +32,7 @@ export default function App() {
           zoom: 3.3
         }}>
         <fog attach="fog" color="white" near={1} far={55} />
-        <AdaptiveDpr />
+        <AdaptiveDpr pixelated />
         <AdaptiveEvents />
         <Environment>
           <Preload all />

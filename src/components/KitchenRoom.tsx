@@ -7,14 +7,17 @@ import { ShadowedMesh } from "./Environment";
 
 const config = {
   "model": "kitchenRoom.glb",
+  "128": "/kitchenRoom/128",
   "512": "/kitchenRoom/512",
   "1k": "/kitchenRoom/1k",
   "2k": "/kitchenRoom/2k",
+  "LOD128": "128",
   "LOD512": "512",
   "LOD1k": "1k",
   "LOD2k": "2k"
 };
 const configs = {
+  LOD128: config.LOD128,
   LOD512: config.LOD512,
   LOD1k: config.LOD1k,
   LOD2k: config.LOD2k
@@ -22,6 +25,9 @@ const configs = {
 
 export function KitchenRoom(props) {
   const kitchenRoom = useConfig(e => e.KitchenRoom);
+  const { nodes: nodesLOD128, materials: materials128 } = useGLTF(
+    `${config[configs.LOD512]}/${config.model}`
+  );
   const { nodes: nodesLOD512, materials: materials512 } = useGLTF(
     `${config[configs.LOD512]}/${config.model}`
   );
@@ -46,8 +52,8 @@ export function KitchenRoom(props) {
       <Suspense
         fallback={
           <ShadowedMesh
-            geometry={nodesLOD512.squareTiles_1["geometry"]}
-            material={materials512.windowTile_mtl_1001}
+            geometry={nodesLOD128.squareTiles_1["geometry"]}
+            material={materials128.windowTile_mtl_1001}
           />
         }>
         <Detailed distances={[0, 1, 2]}>
@@ -69,8 +75,8 @@ export function KitchenRoom(props) {
       <Suspense
         fallback={
           <ShadowedMesh
-            geometry={nodesLOD512.wallCorner_1["geometry"]}
-            material={materials512.windowTile_mtl_1001}
+            geometry={nodesLOD128.wallCorner_1["geometry"]}
+            material={materials128.windowTile_mtl_1001}
           />
         }>
         <Detailed distances={[0, 1, 2]}>
@@ -92,8 +98,8 @@ export function KitchenRoom(props) {
       <Suspense
         fallback={
           <ShadowedMesh
-            geometry={nodesLOD512.windowTileBack_1["geometry"]}
-            material={materials512.windowTile_mtl_1001}
+            geometry={nodesLOD128.windowTileBack_1["geometry"]}
+            material={materials128.windowTile_mtl_1001}
           />
         }>
         <Detailed distances={[0, 1, 2]}>
@@ -115,8 +121,8 @@ export function KitchenRoom(props) {
       <Suspense
         fallback={
           <ShadowedMesh
-            geometry={nodesLOD512.rectangleTiles_1["geometry"]}
-            material={materials512.wallTile_mtl_1001}
+            geometry={nodesLOD128.rectangleTiles_1["geometry"]}
+            material={materials128.wallTile_mtl_1001}
           />
         }>
         <Detailed distances={[0, 1, 2]}>
@@ -138,8 +144,8 @@ export function KitchenRoom(props) {
       <Suspense
         fallback={
           <ShadowedMesh
-            geometry={nodesLOD512.wallTileBack_1["geometry"]}
-            material={materials512.wallTile_mtl_1001}
+            geometry={nodesLOD128.wallTileBack_1["geometry"]}
+            material={materials128.wallTile_mtl_1001}
           />
         }>
         <Detailed distances={[0, 1, 2]}>
@@ -161,8 +167,8 @@ export function KitchenRoom(props) {
       <Suspense
         fallback={
           <ShadowedMesh
-            geometry={nodesLOD512.wall_1["geometry"]}
-            material={materials512.wall_mtl_1001}
+            geometry={nodesLOD128.wall_1["geometry"]}
+            material={materials128.wall_mtl_1001}
           />
         }>
         <Detailed distances={[0, 1, 2]}>
@@ -184,8 +190,8 @@ export function KitchenRoom(props) {
       <Suspense
         fallback={
           <ShadowedMesh
-            geometry={nodesLOD512.r_trimming_1["geometry"]}
-            material={materials512.wall_mtl_1001}
+            geometry={nodesLOD128.r_trimming_1["geometry"]}
+            material={materials128.wall_mtl_1001}
           />
         }>
         <Detailed distances={[0, 1, 2]}>
@@ -207,8 +213,8 @@ export function KitchenRoom(props) {
       <Suspense
         fallback={
           <ShadowedMesh
-            geometry={nodesLOD512.l_trimming_1["geometry"]}
-            material={materials512.wall_mtl_1001}
+            geometry={nodesLOD128.l_trimming_1["geometry"]}
+            material={materials128.wall_mtl_1001}
           />
         }>
         <Detailed distances={[0, 1, 2]}>
@@ -231,8 +237,8 @@ export function KitchenRoom(props) {
         fallback={
           <mesh
             receiveShadow
-            geometry={nodesLOD512.upperGlass_1["geometry"]}
-            material={materials512.glass_mtl_1001}
+            geometry={nodesLOD128.upperGlass_1["geometry"]}
+            material={materials128.glass_mtl_1001}
           />
         }>
         <Detailed distances={[0, 1, 2]}>
@@ -258,8 +264,8 @@ export function KitchenRoom(props) {
         fallback={
           <mesh
             receiveShadow
-            geometry={nodesLOD512.lowerGlass_1["geometry"]}
-            material={materials512.glass_mtl_1001}
+            geometry={nodesLOD128.lowerGlass_1["geometry"]}
+            material={materials128.glass_mtl_1001}
           />
         }>
         <Detailed distances={[0, 1, 2]}>
@@ -285,8 +291,8 @@ export function KitchenRoom(props) {
         fallback={
           <mesh
             castShadow
-            geometry={nodesLOD512.windowSill_1["geometry"]}
-            material={materials512.window_mtl_1001}
+            geometry={nodesLOD128.windowSill_1["geometry"]}
+            material={materials128.window_mtl_1001}
           />
         }>
         <Detailed distances={[0, 1, 2]}>
@@ -311,8 +317,8 @@ export function KitchenRoom(props) {
       <Suspense
         fallback={
           <ShadowedMesh
-            geometry={nodesLOD512.upperPaneSill_1["geometry"]}
-            material={materials512.window_mtl_1001}
+            geometry={nodesLOD128.upperPaneSill_1["geometry"]}
+            material={materials128.window_mtl_1001}
           />
         }>
         <Detailed distances={[0, 1, 2]}>
@@ -334,8 +340,8 @@ export function KitchenRoom(props) {
       <Suspense
         fallback={
           <ShadowedMesh
-            geometry={nodesLOD512.lowerPaneSill_1["geometry"]}
-            material={materials512.window_mtl_1001}
+            geometry={nodesLOD128.lowerPaneSill_1["geometry"]}
+            material={materials128.window_mtl_1001}
           />
         }>
         <Detailed distances={[0, 1, 2]}>
@@ -357,8 +363,8 @@ export function KitchenRoom(props) {
       <Suspense
         fallback={
           <ShadowedMesh
-            geometry={nodesLOD512.latchCase_1["geometry"]}
-            material={materials512.window_mtl_1001}
+            geometry={nodesLOD128.latchCase_1["geometry"]}
+            material={materials128.window_mtl_1001}
           />
         }>
         <Detailed distances={[0, 1, 2]}>
@@ -380,8 +386,8 @@ export function KitchenRoom(props) {
       <Suspense
         fallback={
           <ShadowedMesh
-            geometry={nodesLOD512.latch_1["geometry"]}
-            material={materials512.window_mtl_1001}
+            geometry={nodesLOD128.latch_1["geometry"]}
+            material={materials128.window_mtl_1001}
           />
         }>
         <Detailed distances={[0, 1, 2]}>
@@ -403,8 +409,8 @@ export function KitchenRoom(props) {
       <Suspense
         fallback={
           <ShadowedMesh
-            geometry={nodesLOD512.handle_1["geometry"]}
-            material={materials512.window_mtl_1001}
+            geometry={nodesLOD128.handle_1["geometry"]}
+            material={materials128.window_mtl_1001}
           />
         }>
         <Detailed distances={[0, 1, 2]}>
@@ -426,8 +432,8 @@ export function KitchenRoom(props) {
       <Suspense
         fallback={
           <ShadowedMesh
-            geometry={nodesLOD512.floorBase_1["geometry"]}
-            material={materials512.floor_mtl_1001}
+            geometry={nodesLOD128.floorBase_1["geometry"]}
+            material={materials128.floor_mtl_1001}
           />
         }>
         <Detailed distances={[0, 1, 2]}>
@@ -449,8 +455,8 @@ export function KitchenRoom(props) {
       <Suspense
         fallback={
           <ShadowedMesh
-            geometry={nodesLOD512.floorTile_1["geometry"]}
-            material={materials512.floor_mtl_1001}
+            geometry={nodesLOD128.floorTile_1["geometry"]}
+            material={materials128.floor_mtl_1001}
           />
         }>
         <Detailed distances={[0, 1.9, 2.5]}>

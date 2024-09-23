@@ -35,7 +35,6 @@ export default function App() {
         <AdaptiveDpr pixelated />
         <AdaptiveEvents />
         <Environment>
-          <Preload all />
           <KitchenRoom />
           <CoffeePot />
           <CoffeeMug />
@@ -45,6 +44,7 @@ export default function App() {
           <Fridge />
           <Stove />
           <Sink />
+          <Preload all />
         </Environment>
       </Canvas>
     </Suspense>

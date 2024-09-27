@@ -33,7 +33,7 @@ canvas {
   max-height: 100svw;
   border-radius: 2.5vw 2.5vw 0 0;
   /* transition: all 0.2s ease-in-out; This is funny! */
-  /*background-color: rgb(255, 245, 224); Sky color test*/
+  background-color: rgba(255, 245, 221, 0); /* Sky color test */
 }
 
 .leva-c-TldsY {
@@ -52,11 +52,11 @@ a {
 
 @keyframes suspenseLoad {
   0% {
-    background-color: rgba(63, 63, 63, 0.932);
+    background-color: rgba(63, 63, 63, 1);
     backdrop-filter: blur(10px);
   }
   100% {
-    background-color: rgba(104, 104, 104, 0.918);
+    background-color: rgba(104, 104, 104, 1);
     backdrop-filter: blur(10px);
   }
 }

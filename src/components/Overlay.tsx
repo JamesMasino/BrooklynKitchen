@@ -27,8 +27,8 @@ export function Overlay({ isCredVisible, isTitlesVisible }) {
               <h1>What is this?</h1>
               <p>
                 Welcome to Brooklyn Kitchen! A (work in progress) React Three
-                Fiber scene with a lot of meshes and texture maps. Meant to show
-                off scale and capability, Brooklyn Kitchen is a spec web
+                Fiber scene with a lot of meshes and texture maps. Meant to test
+                scale and capability, Brooklyn Kitchen is a spec web
                 advertisement designed by MAUVE, a creative partnership that
                 focuses on preproduction services for feature films and ads
                 based in NYC.

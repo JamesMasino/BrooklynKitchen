@@ -10,12 +10,7 @@ import {
   Stove,
   UpperCabinets
 } from "@components";
-import {
-  AdaptiveDpr,
-  AdaptiveEvents,
-  Preload,
-  useProgress
-} from "@react-three/drei";
+import { AdaptiveDpr, AdaptiveEvents, Preload } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { useWindowSize } from "@uidotdev/usehooks";
 import { Suspense, useState } from "react";
@@ -23,7 +18,7 @@ import { Suspense, useState } from "react";
 export default function App() {
   const { width, height } = useWindowSize();
   const [dpr, setDpr] = useState(1);
-  const { progress } = useProgress();
+  // const { progress } = useProgress();
 
   return (
     <Suspense

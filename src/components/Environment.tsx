@@ -3,11 +3,16 @@ import {
   ContactShadows,
   OrbitControls,
   Sky,
+  // SoftShadows,
   Stage
 } from "@react-three/drei";
 import { useConfig } from "@store";
 import extend from "just-extend";
 import { useControls } from "leva";
+
+export const ShadowedMesh = props => {
+  return <mesh castShadow receiveShadow {...props} />;
+};
 
 export function Environment({ children }) {
   const config = useConfig(e => e.Environment);
@@ -46,6 +51,7 @@ export function Environment({ children }) {
   return (
     <>
       <group>
+        {/* <SoftShadows {...config} samples={Math.min(15, 25)} /> */}
         <ambientLight intensity={1} position={[-2, 0, 0]} color={0xc99252} />
         <directionalLight
           castShadow
@@ -110,13 +116,16 @@ export function Environment({ children }) {
         <ContactShadows scale={1} blur={4} />
         <OrbitControls
           /*makeDefault*/
-          /*target={[0, -0.3, 0]}*/
-          minDistance={1.5}
-          maxDistance={7.9}
+          // target={[0, -0.3, 0]}
+          enablePan={false}
+          // minDistance={0}
+          maxDistance={4}
           minPolarAngle={Math.PI / 2.75}
           maxPolarAngle={Math.PI / 2}
-          minAzimuthAngle={0.2}
-          maxAzimuthAngle={1}
+          minAzimuthAngle={0.5}
+          maxAzimuthAngle={0.85}
+          enableDamping={true}
+          dampingFactor={0.3}
         />
         <BakeShadows />
       </Stage>

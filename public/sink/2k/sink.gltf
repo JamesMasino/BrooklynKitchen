@@ -72,9 +72,9 @@
     { "buffer": 0, "byteOffset": 0, "byteLength": 30267 },
     { "buffer": 0, "byteOffset": 30267, "byteLength": 30319 },
     { "buffer": 0, "byteOffset": 60586, "byteLength": 46655 },
-    { "buffer": 0, "byteOffset": 107241, "byteLength": 10499 },
-    { "buffer": 0, "byteOffset": 117740, "byteLength": 106080 },
-    { "buffer": 0, "byteOffset": 223820, "byteLength": 37671 }
+    { "buffer": 0, "byteOffset": 107241, "byteLength": 10500 },
+    { "buffer": 0, "byteOffset": 117741, "byteLength": 106082 },
+    { "buffer": 0, "byteOffset": 223823, "byteLength": 37670 }
   ],
   "samplers": [
     { "magFilter": 9729, "minFilter": 9985, "wrapS": 10497, "wrapT": 10497 }
@@ -93,12 +93,12 @@
       "mimeType": "image/webp",
       "uri": "faucetOcclusionRoughnessMetallic.webp"
     },
-    { "mimeType": "image/png", "uri": "faucetNormal.png" },
+    { "mimeType": "image/webp", "uri": "faucetNormal.webp" },
     { "mimeType": "image/webp", "uri": "sinkColor.webp" },
     { "mimeType": "image/webp", "uri": "sinkOcclusionRoughnessMetallic.webp" },
-    { "mimeType": "image/png", "uri": "sinkNormal.png" }
+    { "mimeType": "image/webp", "uri": "sinkNormal.webp" }
   ],
-  "buffers": [{ "uri": "sink.bin", "byteLength": 261491 }],
+  "buffers": [{ "uri": "sink.bin", "byteLength": 261493 }],
   "materials": [
     {
       "name": "chrome_mtl_1001",

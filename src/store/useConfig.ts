@@ -24,6 +24,7 @@ export interface IConfigStore {
   Sink: ILevaConfig;
   Environment: ILevaConfig;
   Vessel: ILevaConfig;
+  Outside: ILevaConfig;
 }
 
 export const useConfig = create<IConfigStore>(set => ({
@@ -38,5 +39,6 @@ export const useConfig = create<IConfigStore>(set => ({
   Stove: config.Stove,
   Sink: config.Sink,
   Environment: config.Environment,
-  Vessel: config.Vessel
+  Vessel: config.Vessel,
+  Outside: config.Outside
 }));

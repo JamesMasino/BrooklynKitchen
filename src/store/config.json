@@ -75,10 +75,10 @@
       }
     },
     "Stage": {
+      "Collapsed": true,
       "adjustCamera": {
         "value": 1.2
       },
-      "Collapsed": true,
       "environment": {
         "value": false
       },
@@ -108,6 +108,12 @@
   "LowerCabinetSink": {
     "LowerCabinets": {
       "label": "Show Cabinets",
+      "value": true
+    }
+  },
+  "Outside": {
+    "Mug": {
+      "label": "Show Outside",
       "value": true
     }
   },

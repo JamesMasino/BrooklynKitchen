@@ -13,8 +13,8 @@ const config = {
   "2k": "/coffeeMug/2k",
   "LOD128": "128",
   "LOD512": "512",
-  "LOD1k": "1k",
-  "LOD2k": "2k"
+  "LOD1k": "512",
+  "LOD2k": "512"
 };
 const configs = {
   LOD128: config.LOD128,

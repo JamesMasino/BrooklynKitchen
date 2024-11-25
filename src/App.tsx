@@ -6,6 +6,7 @@ import {
   Fridge,
   KitchenRoom,
   LowerCabinetSink,
+  Outside,
   Sink,
   Stove,
   UpperCabinets
@@ -62,8 +63,9 @@ export default function App() {
           <Fridge />
           <Stove />
           <Sink />
-          <Preload />
         </Environment>
+        <Outside />
+        <Preload />
       </Canvas>
     </Suspense>
   );

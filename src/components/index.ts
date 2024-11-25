@@ -9,6 +9,7 @@ export { Header } from "./Header";
 export { KitchenRoom } from "./KitchenRoom";
 export { Logo } from "./Logo";
 export { LowerCabinetSink } from "./LowerCabinetSink";
+export { Outside } from "./Outside";
 export { Overlay } from "./Overlay";
 export { Sink } from "./Sink";
 export { Stove } from "./Stove";

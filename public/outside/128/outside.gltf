@@ -1,0 +1,97 @@
+{
+  "asset": { "generator": "glTF-Transform v4.0.2", "version": "2.0" },
+  "accessors": [
+    { "type": "SCALAR", "componentType": 5123, "count": 6 },
+    { "type": "VEC3", "componentType": 5126, "count": 4 },
+    {
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 4,
+      "max": [-1008.3509521484375, 735.673095703125, 723.153076171875],
+      "min": [-1008.3509521484375, -492.3810119628906, -504.90093994140625]
+    },
+    { "type": "VEC4", "componentType": 5126, "count": 4 },
+    { "type": "VEC2", "componentType": 5126, "count": 4 }
+  ],
+  "bufferViews": [{ "buffer": 0, "byteOffset": 0, "byteLength": 247 }],
+  "samplers": [
+    { "magFilter": 9729, "minFilter": 9985, "wrapS": 10497, "wrapT": 10497 }
+  ],
+  "textures": [
+    { "source": 0, "sampler": 0 },
+    { "source": 3, "sampler": 0 },
+    { "source": 2, "sampler": 0 },
+    { "source": 1, "sampler": 0 }
+  ],
+  "images": [
+    { "mimeType": "image/webp", "uri": "outsideColor.webp" },
+    {
+      "mimeType": "image/webp",
+      "uri": "outsideOcclusionRoughnessMetallic.webp"
+    },
+    { "mimeType": "image/webp", "uri": "outsideNormal.webp" },
+    { "mimeType": "image/webp", "uri": "outsideEmissive.webp" }
+  ],
+  "buffers": [{ "uri": "outside.bin", "byteLength": 247 }],
+  "materials": [
+    {
+      "name": "outside_mtl_1001",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": { "index": 0 },
+        "metallicRoughnessTexture": { "index": 3 }
+      },
+      "emissiveFactor": [1, 1, 1],
+      "emissiveTexture": { "index": 1 },
+      "normalTexture": { "index": 2 },
+      "occlusionTexture": { "index": 3 }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Outside_geo",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 2,
+            "TANGENT": 3,
+            "TEXCOORD_0": 4
+          },
+          "mode": 4,
+          "material": 0,
+          "indices": 0,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 0,
+              "attributes": {
+                "NORMAL": 0,
+                "POSITION": 1,
+                "TANGENT": 2,
+                "TEXCOORD_0": 3
+              }
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "RootNode",
+      "scale": [0.00999999977648258, 0.00999999977648258, 0.00999999977648258],
+      "children": [1]
+    },
+    { "name": "Outside_grp", "children": [2] },
+    {
+      "name": "Outside_geo",
+      "translation": [0, 41.0599822998047, 0],
+      "scale": [1, 0.662463366985321, 1],
+      "children": [3]
+    },
+    { "name": "Outside_geo", "mesh": 0 }
+  ],
+  "scenes": [{ "name": "Scene", "nodes": [0] }],
+  "scene": 0,
+  "extensionsUsed": ["KHR_draco_mesh_compression"],
+  "extensionsRequired": ["KHR_draco_mesh_compression"]
+}

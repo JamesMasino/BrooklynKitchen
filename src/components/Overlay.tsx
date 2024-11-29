@@ -36,11 +36,11 @@ export function Overlay({ isCredVisible, isTitlesVisible }) {
               <h1>Credits</h1>
               <p>
                 Brooklyn Kitchen is powered by{" "}
-                <a href="https://github.com/SystemStack/nitro-cold-brew">
+                <a href="https://github.com/LeviBroadnax/nitro-cold-brew">
                   NitroColdBrew
                 </a>
                 , put together by{" "}
-                <a href="https://github.com/SystemStack">Levi Broadnax</a>,
+                <a href="https://github.com/LeviBroadnax">Levi Broadnax</a>,
                 which in itself is an open-source webGL experiment.
               </p>
               <p>

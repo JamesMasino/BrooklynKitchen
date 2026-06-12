@@ -50,7 +50,7 @@
 .model {
   position: fixed;
   right: 0;
-  max-width: 40%;
+  max-width: 30%;
   margin: 2svw 0 2svw 2svw;
   padding: 2svw;
   background-color: rgba(126, 126, 126, 0.568);

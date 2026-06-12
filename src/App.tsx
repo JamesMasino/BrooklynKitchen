@@ -42,14 +42,9 @@ export default function App() {
       }>
       <Canvas
         performance={{ max: 0.5 }}
-        frameloop="demand"
+        // frameloop="demand"
         shadows={true}
-        dpr={dpr}
-        camera={{
-          fov: 80,
-          position: [10, -0.05, 10],
-          zoom: 4
-        }}>
+        dpr={dpr}>
         <fog attach="fog" color="white" near={1} far={55} />
         <AdaptiveDpr pixelated />
         <AdaptiveEvents />

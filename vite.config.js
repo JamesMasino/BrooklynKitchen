@@ -8,7 +8,7 @@ export default defineConfig({
   server: {
     watch: "./src",
     hmr: {
-      clientPort: 443
+      clientPort: 5173
     }
   },
   resolve: {
